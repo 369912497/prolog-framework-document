@@ -1,6 +1,4 @@
-# 快速使用
-
-## **plg-fx-apidoc**
+# **plg-fx-apidoc**
 
 引用
 

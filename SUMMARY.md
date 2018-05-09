@@ -8,6 +8,7 @@
 
 * [     plg-fx-api](chapter1.md)
 * [plg-fx-log](plg-fx-log.md)
+* [plg-fx-core](plg-fx-core.md)
 
 ## 功能
 

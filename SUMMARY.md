@@ -7,6 +7,7 @@
 ## 快速使用
 
 * [plg-fx-api](chapter1.md)
+* [plg-fx-log](plg-fx-log.md)
 
 ## 功能
 

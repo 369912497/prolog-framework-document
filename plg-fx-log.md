@@ -1,4 +1,10 @@
-# **plg-fx-log**
+# **log - 日志模块**
+
+#### 模块名称
+
+```
+plg-fx-log
+```
 
 > #### 引用
 
@@ -22,7 +28,7 @@ prolog:
 
 > #### 使用
 
-* 在controller中使用注解 @ControllerLog 进行注解，可注解在类上，亦可注解在方法上
+* 在controller中使用注解 @ControllerLog 进行注解，可注解在类上，亦可注解在方法上
 
 
 

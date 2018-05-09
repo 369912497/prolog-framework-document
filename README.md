@@ -6,7 +6,12 @@
 
 ![](/assets/import.png)
 
-                                                                                 总体框架图
+```
+                                                                             总体框架图
+                                                                             功能框架如下图
+```
+
+功能框架如下图：
 
 ![](/assets/import2.png)
 

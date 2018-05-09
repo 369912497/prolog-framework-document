@@ -25,12 +25,9 @@ prolog:
 
 * 在传输对象包括Entity、vo、Dto使用@ApiModel\(description="产品实体"\) 或 @ApiModelProperty\(value = "产品id"\) 进行注解
 
-
-
-*  controller进行相关注解（注解参考swagger2），如下示例：
+* controller进行相关注解（注解参考swagger2），如下示例：
 
 ```
-
 @Api(tags="产品服务")
 @RestController
 @RequestMapping("/product")
@@ -39,7 +36,7 @@ public class ProductController {
 
      @Autowired
      private IProductBiz productBiz;
-     
+
      @ApiOperation(value="新增商品", notes="新增商品")
      @PostMapping("/0")
      @ControllerLog("新增商品")
@@ -48,8 +45,9 @@ public class ProductController {
            return  RestMessage.newInstance(true, "保存成功",product.getId());
      }
 ｝
-
 ```
+
+* 启动项目访问地址：http://host:port/contextpath/apidoc.html
 
 
 

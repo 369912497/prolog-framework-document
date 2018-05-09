@@ -2,11 +2,11 @@
 
 ## 简介
 
-* [简介](README.md)
+* [概述](README.md)
 
 ## 快速使用
 
-* [plg-fx-api](chapter1.md)
+* [     plg-fx-api](chapter1.md)
 * [plg-fx-log](plg-fx-log.md)
 
 ## 功能

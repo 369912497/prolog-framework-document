@@ -7,6 +7,7 @@
 
 ## 功能
 
+* redis
 * [BaseMapper](gong-neng/basemapper.md)
 * [文件上传](wen-jian-shang-chuan.md)
 

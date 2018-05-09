@@ -2,17 +2,15 @@
 
 ## **plg-fx-apidoc**
 
-     引用
+引用
 
-&lt;dependency&gt;
-
-     &lt;groupId&gt;com.prolog.framework&lt;/groupId&gt;
-
-     &lt;artifactId&gt;plg-fx-starter-apidoc&lt;/artifactId&gt;
-
-     &lt;version&gt;${plg.fx.verison}&lt;/version&gt;
-
- &lt;/dependency&gt;
+```
+<dependency>
+     <groupId>com.prolog.framework</groupId>
+     <artifactId>plg-fx-starter-apidoc</artifactId>
+     <version>${plg.fx.verison}</version>
+ </dependency>
+```
 
 
 

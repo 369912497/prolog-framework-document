@@ -6,8 +6,8 @@
 
 ## 快速使用
 
-* [log - 日志模块](plg-fx-log.md)
 * [apidoc - web api文档模块](chapter1.md)
+* [log - 日志模块](plg-fx-log.md)
 * [core - 核心模块](plg-fx-core.md)
 
 ## 功能

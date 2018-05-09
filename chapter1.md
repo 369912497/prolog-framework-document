@@ -1,12 +1,10 @@
-# **apidoc**
+# **apidoc - web api 文档模块**
 
 > #### 模块名称
 
 ```
 plg-fx-apidoc
 ```
-
-
 
 > #### 引用
 

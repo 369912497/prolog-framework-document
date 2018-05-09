@@ -47,7 +47,11 @@ public class ProductController {
 ｝
 ```
 
-* 启动项目访问地址：http://host:port/contextpath/apidoc.html
+* 启动项目访问地址：[http://host:port/contextpath/apidoc.html](http://host:port/contextpath/apidoc.html)
+
+> #### 补充说明
+
+* 在页面进行测试时，若后台使用map接收参数，请使用JSON方式进行测试
 
 
 

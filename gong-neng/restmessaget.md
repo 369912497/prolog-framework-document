@@ -25,7 +25,6 @@ String url = "http://localhost:8888/napi/session/"+token;
 String ms = restTemplate.getForObject(url, String.class);
 
 RestMessage<UserDto> msg = RestMessage.parseJsonString(ms,new TypeReference<RestMessage<UserDto>>(){});
-
 UserDto userDto = msg.getData();
 ```
 

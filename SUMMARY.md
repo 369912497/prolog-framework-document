@@ -21,9 +21,9 @@
   * [FieldSelector](gong-neng/basemapper/fieldselector.md)
   * [MapUtils](gong-neng/basemapper/maputils.md)
   * [Entity注解](gong-neng/basemapper/entityzhu-jie.md)
-    * [@Id](gong-neng/basemapper/entityzhu-jie/id.md)
     * [@Table](gong-neng/basemapper/entityzhu-jie/table.md)
-    * @Column
+    * [@Id](gong-neng/basemapper/entityzhu-jie/id.md)
+    * [@Column](gong-neng/basemapper/entityzhu-jie/column.md)
     * @AutoKey
     * @Ignore
     * @One

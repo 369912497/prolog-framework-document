@@ -57,5 +57,5 @@ public void testDelete(){
 }
 ```
 
-
+备注：对于实体字段（@one注解），直接写字段名
 

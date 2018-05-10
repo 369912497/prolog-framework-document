@@ -4,19 +4,19 @@
 
 ```
 public List<OptionsVO> getByFatherId(String fatherId) {
-		Criteria crt = Criteria.forClass(LmsTmsZone.class);
-		Restriction rt=null;
-		if(StringUtils.isEmpty(fatherId)){
-			rt = Restrictions.eq("zlevel", 2);
-		}else{
-			rt = Restrictions.eq("fatherid", fatherId);
-		}
-		crt.setRestriction(rt);
-		crt.setOrder(Order.asc(new String[]{"sortcode","zoneid"}));
-		List<LmsTmsZone> list =  lmstmszoneMapper.findByCriteria(crt);
-		
-		return convertToOptions(list);
-	}
+        Criteria crt = Criteria.forClass(LmsTmsZone.class);
+        Restriction rt=null;
+        if(StringUtils.isEmpty(fatherId)){
+            rt = Restrictions.eq("zlevel", 2);
+        }else{
+            rt = Restrictions.eq("fatherid", fatherId);
+        }
+        crt.setRestriction(rt);
+        crt.setOrder(Order.asc(new String[]{"sortcode","zoneid"}));
+        List<LmsTmsZone> list =  lmstmszoneMapper.findByCriteria(crt);
+
+        return convertToOptions(list);
+    }
 ```
 
 

@@ -18,7 +18,7 @@
 
 * [BaseMapper](gong-neng/basemapper.md)
   * [Criteria](gong-neng/basemapper/criteria.md)
-  * FieldSelector
+  * [FieldSelector](gong-neng/basemapper/fieldselector.md)
   * MapUtils
 * [redis](gong-neng/redis.md)
 * RestMessage&lt;T&gt;

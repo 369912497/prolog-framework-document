@@ -32,7 +32,7 @@ BaseMapper是封装在plg-fx-dao模块中，BaseMapper对数据库操作的通�
 
 ```
 @Test
-public void testDelete1(){
+public void testDelete(){
        mapper.deleteByIds(new Integer[]{1,2,3}, User.class);
 }
 ```

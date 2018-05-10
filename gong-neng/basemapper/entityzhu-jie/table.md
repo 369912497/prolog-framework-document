@@ -7,7 +7,8 @@
 > ##### 配置
 
 ```
-无
+String value(); //表名
+String columnPrefix() default "";//所有列前缀
 ```
 
 

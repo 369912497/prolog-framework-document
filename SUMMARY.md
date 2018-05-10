@@ -16,8 +16,8 @@
 
 ## 功能
 
-* [redis](gong-neng/redis.md)
 * [BaseMapper](gong-neng/basemapper.md)
+* [redis](gong-neng/redis.md)
 * RestMessage&lt;T&gt;
 * [文件上传](wen-jian-shang-chuan.md)
 

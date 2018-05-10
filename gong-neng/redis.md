@@ -23,7 +23,8 @@ prolog:
 
 ```
 JedisManager.getString(key);
-JedisManager.setString(key，value);
+JedisManager.setString(key,value);
+JedisManager.setString(key,seconds,value);
 ```
 
 

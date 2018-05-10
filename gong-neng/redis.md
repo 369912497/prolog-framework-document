@@ -1,4 +1,4 @@
-Redis
+## Redis
 
 框架提供了Redis连接池服务，配置如下：
 

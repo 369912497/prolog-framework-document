@@ -11,7 +11,7 @@ plg-fx-redis
 ```
 <dependency>
      <groupId>com.prolog.framework</groupId>
-     <artifactId>plg-fx-common</artifactId>
+     <artifactId>plg-fx-starter-redis</artifactId>
      <version>${plg.fx.verison}</version>
  </dependency>
 ```

@@ -9,6 +9,7 @@
 * [apidoc - web api文档模块](chapter1.md)
 * [log - 日志模块](plg-fx-log.md)
 * [core - 核心模块](plg-fx-core.md)
+* [common - 通用功能模块](common-tong-yong-gong-neng-mo-kuai.md)
 
 ## 功能
 

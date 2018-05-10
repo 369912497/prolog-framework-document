@@ -3,7 +3,7 @@
 > #### 模块名称
 
 ```
-plg-fx-common
+plg-fx-redis
 ```
 
 > #### 引用

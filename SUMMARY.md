@@ -31,7 +31,7 @@
 * [RestMessage&lt;T&gt;](gong-neng/restmessaget.md)
 * [Page](gong-neng/page.md)
 * [Web api 注解](gong-neng/web-api-zhu-jie.md)
-  * 注解pojo
-  * 注解controller
+  * [注解pojo](gong-neng/web-api-zhu-jie/zhu-jie-pojo.md)
+  * [注解controller](gong-neng/web-api-zhu-jie/zhu-jie-controller.md)
 * [文件上传/下载](wen-jian-shang-chuan.md)
 

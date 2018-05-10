@@ -25,7 +25,7 @@
     * [@Id](gong-neng/basemapper/entityzhu-jie/id.md)
     * [@Column](gong-neng/basemapper/entityzhu-jie/column.md)
     * @AutoKey
-    * @Ignore
+    * [@Ignore](gong-neng/basemapper/entityzhu-jie/ignore.md)
     * @One
 * [redis](gong-neng/redis.md)
 * [RestMessage&lt;T&gt;](gong-neng/restmessaget.md)

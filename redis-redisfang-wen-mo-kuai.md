@@ -19,7 +19,6 @@ plg-fx-redis
 > #### 配置
 
 ```
-
 prolog:
   redis: #redis pool 配置
     maxTotal: 15 #最大连接数
@@ -36,7 +35,11 @@ prolog:
 
 > #### 使用
 
-* 提供Message封装
+* 直接使用JedisManager的静态方法
+
+```
+JedisManager.getString(key);
+```
 
 
 

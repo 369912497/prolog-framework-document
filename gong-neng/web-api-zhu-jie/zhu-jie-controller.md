@@ -14,6 +14,16 @@ Web API 文档核心注解是在controller中，其中包含多个注解标签�
 @ApiImplicitParam(name="id",value="商品id",required = true,paramType = "path")//注解单个参数
 ```
 
+```
+//注解多个参数
+@ApiImplicitParams({
+@ApiImplicitParam(name = "pageNum", value = "页码", required = true, dataType = "int",paramType = "path"),
+@ApiImplicitParam(name = "pageSize", value = "每页记录数", required = true, dataType = "int")
+})
+```
+
+
+
 
 
 示例：

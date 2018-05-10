@@ -19,7 +19,10 @@ prolog:
 
 使用方法：
 
+![](/assets/import9.png)
+
 ```
+JedisManager.getString(key);
 JedisManager.getString(key);
 ```
 

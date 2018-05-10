@@ -16,5 +16,6 @@
 
 * [redis](gong-neng/redis.md)
 * [BaseMapper](gong-neng/basemapper.md)
+* RestMessage&lt;T&gt;
 * [文件上传](wen-jian-shang-chuan.md)
 

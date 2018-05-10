@@ -17,6 +17,9 @@
 ## 功能
 
 * [BaseMapper](gong-neng/basemapper.md)
+  * [Criteria](gong-neng/basemapper/criteria.md)
+  * FieldSelector
+  * MapUtils
 * [redis](gong-neng/redis.md)
 * RestMessage&lt;T&gt;
 * [文件上传](wen-jian-shang-chuan.md)

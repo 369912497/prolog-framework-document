@@ -22,6 +22,7 @@ RestMessage.newInstance(true, "获取数据成功",User);
 
 ```
 String url = "http://localhost:8888/napi/session/"+token;
+
 //｛success:true,message:'',data:{id:1,number:"0012120",name:"张三"}｝
 String ms = restTemplate.getForObject(url, String.class);
 

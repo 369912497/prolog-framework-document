@@ -4,6 +4,10 @@ BaseMapper是封装在plg-fx-dao模块中，BaseMapper对数据库操作的通�
 
 ![](/assets/import3.png)
 
+使用时直接对BaseMapper进行继承即可
+
+
+
 > #### deleteByCriteria\(Criteria criteria\)
 
 ```

@@ -11,5 +11,5 @@ String value(); //表名
 String columnPrefix() default "";//所有列前缀
 ```
 
-
+如果字段中配置有@Column，columnPrefix无效
 

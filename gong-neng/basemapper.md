@@ -48,7 +48,14 @@ public void testDelete(){
 }
 ```
 
-#### deleteByMap\(Object\[\] ids,Class&lt;T&gt; c\)
+> #### deleteByMap\(Map&lt;String,Object&gt; map ,Class&lt;T&gt; c\)
+
+```
+@Test
+public void testDelete(){
+      mapper.deleteByMap(MapUtils.put("zone", "01090113").getMap(), User.class);
+}
+```
 
 
 

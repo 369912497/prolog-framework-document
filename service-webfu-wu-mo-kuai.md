@@ -11,7 +11,7 @@ plg-fx-service
 ```
 <dependency>
      <groupId>com.prolog.framework</groupId>
-     <artifactId>plg-fx-common</artifactId>
+     <artifactId>plg-fx-starter-service</artifactId>
      <version>${plg.fx.verison}</version>
  </dependency>
 ```

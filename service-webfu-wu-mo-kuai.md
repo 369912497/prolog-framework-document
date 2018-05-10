@@ -19,7 +19,11 @@ plg-fx-service
 > #### 配置
 
 ```
-无
+prolog:
+  web:
+    multipart:  #文件上传配置
+      maxFileSize: 100MB
+      maxRequestSize: 100MB
 ```
 
 > #### 使用

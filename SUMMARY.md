@@ -22,7 +22,7 @@
   * [MapUtils](gong-neng/basemapper/maputils.md)
   * [Entity注解](gong-neng/basemapper/entityzhu-jie.md)
     * [@Id](gong-neng/basemapper/entityzhu-jie/id.md)
-    * @Table
+    * [@Table](gong-neng/basemapper/entityzhu-jie/table.md)
     * @Column
     * @AutoKey
     * @Ignore

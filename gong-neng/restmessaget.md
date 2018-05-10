@@ -18,9 +18,12 @@ RestMessage.newInstance(true, "获取数据成功",list);
 RestMessage.newInstance(true, "获取数据成功",User);
 ```
 
+将json字符串转为RestMessage对象
 
-
-
+```
+msg = RestMessage.parseJsonString(ms,new TypeReference<RestMessage<UserDto>>(){});
+UserDto userDto = msg.getData();
+```
 
 源代码：
 

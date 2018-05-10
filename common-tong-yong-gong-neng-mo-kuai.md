@@ -24,7 +24,7 @@ plg-fx-common
 
 > #### 使用
 
-* 在controller中使用注解 @ControllerLog 进行注解，可注解在类上，亦可注解在方法上
+* 提供Message封装
 
 
 

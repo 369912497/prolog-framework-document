@@ -20,12 +20,12 @@ BaseMapper是封装在plg-fx-dao模块中，BaseMapper对数据库操作的通�
 > #### deleteById\(Object id,Class&lt;T&gt; c\)
 
 ```
-    @Test
+  @Test
   public void testDelete1(){
-		User u = new User();
-		u.setId(8);
-		mapper.deleteById(8, User.class);
-	}
+        User u = new User();
+        u.setId(8);
+        mapper.deleteById(8, User.class);
+    }
 ```
 
 

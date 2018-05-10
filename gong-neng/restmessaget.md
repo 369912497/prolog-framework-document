@@ -14,6 +14,8 @@ data:Object
 
 ```
 RestMessage.newInstance(true, "获取数据成功",list);
+
+RestMessage.newInstance(true, "获取数据成功",User);
 ```
 
 

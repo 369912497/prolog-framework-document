@@ -53,6 +53,8 @@ public class Product implements Serializable{
 }
 ```
 
+---
+
 > ##### @ApiModel\(description="产品实体"\)
 
 注解在类上，实体的说明

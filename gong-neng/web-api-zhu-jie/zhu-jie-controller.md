@@ -10,6 +10,10 @@ Web API 文档核心注解是在controller中，其中包含多个注解标签�
 @ApiOperation(value="新增商品", notes="新增商品") //注解操作
 ```
 
+```
+@ApiImplicitParam(name="id",value="商品id",required = true,paramType = "path")//注解单个参数
+```
+
 
 
 示例：

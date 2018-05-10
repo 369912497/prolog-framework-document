@@ -12,6 +12,7 @@
 * [common - 通用功能模块](common-tong-yong-gong-neng-mo-kuai.md)
 * [dao - 数据访问层模块](dao-shu-ju-fang-wen-ceng-mo-kuai.md)
 * [service - web服务模块](service-webfu-wu-mo-kuai.md)
+* [redis - redis访问模块](redis-redisfang-wen-mo-kuai.md)
 
 ## 功能
 

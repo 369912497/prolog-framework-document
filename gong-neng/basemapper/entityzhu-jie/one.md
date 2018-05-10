@@ -7,7 +7,7 @@
 > ##### 配置
 
 ```
-String value();//列名
+String property();//定义关联对象中的关联字段
 ```
 
 

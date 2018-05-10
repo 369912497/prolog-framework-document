@@ -1,0 +1,30 @@
+# dao** - 数据访问层模块**
+
+> #### 模块名称
+
+```
+plg-fx-common
+```
+
+> #### 引用
+
+```
+<dependency>
+     <groupId>com.prolog.framework</groupId>
+     <artifactId>plg-fx-common</artifactId>
+     <version>${plg.fx.verison}</version>
+ </dependency>
+```
+
+> #### 配置
+
+```
+无
+```
+
+> #### 使用
+
+* 提供Message封装
+
+
+

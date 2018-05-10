@@ -72,38 +72,38 @@ List<Map<String,Object>> execProcedure(String procedureName,Map<String,Object> p
 
     @Autowired
     private CommonMapper cmapper;
-    
+
     @Test
      public void testSequence(){
            String val = cmapper.getSequenceNextVal("SYS_CODE");
            System.out.println(val);
      }
-     
+
      @Test
      public void testProc2(){
-           
+
            Map<String,Object> map = new HashMap<String,Object>();
            map.put("errorCode", 0);
            map.put("errorText", "");
            map.put("codeType", "CarrierID");
            map.put("segid", "Seed");
-           
+
            List<ProcedureParam> list = new ArrayList<ProcedureParam>();
            ProcedureParam pp1 = new ProcedureParam("errorCode",Mode.MODE_OUT,JdbcType.INTEGER.name());
            ProcedureParam pp2 = new ProcedureParam("errorText",Mode.MODE_OUT,JdbcType.VARCHAR.name());
            ProcedureParam pp3 = new ProcedureParam("codeType",Mode.MODE_IN,JdbcType.VARCHAR.name());
            ProcedureParam pp4 = new ProcedureParam("segid",Mode.MODE_IN,JdbcType.VARCHAR.name());
-           
+
            list.add(pp1);
            list.add(pp2);
            list.add(pp3);
            list.add(pp4);
-           
+
            cmapper.execProcedure("P_GENBILLNO", map, list);
            //mapper.getCompanyId(map);
            System.out.println(map.get("errorCode"));
            System.out.println(map.get("errorText"));
-           
+
      }
 ```
 

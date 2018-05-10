@@ -48,5 +48,7 @@ public void testDelete(){
 }
 ```
 
+#### deleteByMap\(Object\[\] ids,Class&lt;T&gt; c\)
+
 
 

@@ -10,5 +10,11 @@ data:Object
 ｝
 ```
 
+使用方法：
+
+```
+RestMessage.newInstance(true, "获取数据成功",list);
+```
+
 
 

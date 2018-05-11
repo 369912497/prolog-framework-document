@@ -34,6 +34,7 @@ prolog:
 * controller进行相关注解（注解参考swagger2），如下示例：
 
 ```
+···java
 @Api(tags="产品服务")
 @RestController
 @RequestMapping("/product")

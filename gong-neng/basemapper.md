@@ -6,7 +6,7 @@ BaseMapper是封装在plg-fx-dao模块中，BaseMapper对数据库操作的通�
 
 使用时直接对BaseMapper进行继承即可
 
-```
+```java
 import com.prolog.framework.dao.mapper.BaseMapper;
 import com.prolog.project.wms.model.User;
 
@@ -17,7 +17,7 @@ public interface UserMapper extends BaseMapper<User>{
 
 > #### deleteByCriteria\(Criteria criteria\)
 
-```
+```java
     @Test
     public void testDelete2(){
         Criteria c = Criteria.forClass(User.class);
@@ -30,7 +30,7 @@ public interface UserMapper extends BaseMapper<User>{
 
 > #### deleteById\(Object id,Class&lt;T&gt; c\)
 
-```
+```java
   @Test
   public void testDelete1(){
         User u = new User();

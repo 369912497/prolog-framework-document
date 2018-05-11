@@ -19,8 +19,8 @@ plg-fx-service
 > #### 配置
 
 ```yaml
-prolog:
-  web:
+prolog: 
+  web: 
     multipart:  #文件上传配置
       maxFileSize: 100MB
       maxRequestSize: 100MB

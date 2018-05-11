@@ -12,7 +12,7 @@ prolog:
 
 文件上传，推荐实践：
 
-```
+```java
 @ApiOperation(value="文件上传测试")
     @PostMapping("/testupload")
     public RestMessage<String> uploadImg(@RequestParam("file") List<MultipartFile> files,HttpServletRequest request) throws IOException, Exception {
@@ -28,7 +28,7 @@ prolog:
 
 文件下载，推荐实践：
 
-```
+```java
  @ApiOperation(value="文件下载测试")
      @GetMapping("/download")
     public void downLoad(HttpServletResponse response) throws IOException{

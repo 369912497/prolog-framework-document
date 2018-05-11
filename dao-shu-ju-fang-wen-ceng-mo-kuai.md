@@ -40,7 +40,7 @@ prolog:
 
 * 在开发mapper时可继承BaseMapper，BaseMapper中封装了curd的通用方法，如：
 
-```
+```java
 import com.prolog.framework.dao.mapper.BaseMapper;
 import com.prolog.test.mysqlplus.model.Dept;
 

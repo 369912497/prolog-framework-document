@@ -21,7 +21,7 @@ prolog:
 
 ![](/assets/import9.png)
 
-```
+```java
 JedisManager.getString(key);
 
 JedisManager.setString(key,value);

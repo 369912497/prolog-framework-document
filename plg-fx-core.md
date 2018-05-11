@@ -20,8 +20,8 @@ plg-fx-core
 
 ```yaml
 #日志配置文件,在引用中添加以下配置
-prolog:
-  log:
+prolog: 
+  log: 
     implement: com.prolog.framework.log.service.FileLogService #日志实现类全名
     logFilePath: d:/prolog-log.txt #对应实现类需要的参数
 ```

@@ -51,7 +51,7 @@ public interface DeptMapper extends BaseMapper<Dept>{
 
 * 使用分页参考方式如下
 
-```
+```java
 import com.prolog.framework.core.dto.Page;
 import com.github.pagehelper.PageHelper;
 
@@ -64,7 +64,7 @@ public Page<Product> getPage(int pageNum, int pageSize) {
 
 * CommonMapper是可以直接使用的通用mapper
 
-```
+```java
 //oracle sequence
 String getSequenceNextVal(String sequenceName);
 //存储过程调用

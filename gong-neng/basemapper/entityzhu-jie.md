@@ -4,7 +4,7 @@ Entity注解主要是为BaseMapper服务，用于描述实体与数据表之间�
 
 示例：
 
-```
+```java
 @Table(columnPrefix="c_",value="cyctest")
 public class User {
     @Id

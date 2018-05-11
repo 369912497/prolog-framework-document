@@ -57,7 +57,7 @@ public class ProductController {
 
 > #### 补充说明
 
-* 在页面进行测试时，若后台使用map接收参数，请使用JSON方式进行测试
+* 在页面进行测试时，若后台使用@RequestBody接收参数，请使用JSON方式进行测试
 
 
 

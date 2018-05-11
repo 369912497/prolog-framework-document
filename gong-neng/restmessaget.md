@@ -2,7 +2,7 @@
 
 RestMessage&lt;T&gt;是对返回结果进行了封装，其数据展现形式为：
 
-```
+```json
 ｛
 success:true,
 message:"消息",

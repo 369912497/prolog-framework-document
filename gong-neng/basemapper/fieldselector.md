@@ -6,7 +6,7 @@ FeildSelector是对字段进行过滤，主要用于数据的查询、插入和�
 
 使用方法如下：
 
-```
+```java
 @Test
     public void testUpdate2(){
         User u = new User();

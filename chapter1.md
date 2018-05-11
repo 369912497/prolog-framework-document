@@ -8,7 +8,7 @@ plg-fx-apidoc
 
 > #### 引用
 
-```
+```xml
 <dependency>
      <groupId>com.prolog.framework</groupId>
      <artifactId>plg-fx-starter-apidoc</artifactId>
@@ -18,7 +18,7 @@ plg-fx-apidoc
 
 > #### 配置
 
-```
+```yml
 prolog:
   apidoc:
     title: 订单服务API文档
@@ -41,7 +41,7 @@ prolog:
 public class ProductController {
     @Autowired
     private IProductBiz productBiz;
-    
+
     @ApiOperation(value="新增商品", notes="新增商品")
     @PostMapping("/0")
     @ControllerLog("新增商品")

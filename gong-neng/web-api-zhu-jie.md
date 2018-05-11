@@ -2,7 +2,7 @@
 
 > #### 配置
 
-```ymal
+```yaml
 prolog: 
   apidoc: 
     title: 订单服务API文档

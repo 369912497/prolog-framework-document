@@ -41,7 +41,7 @@ public interface UserMapper extends BaseMapper<User>{
 
 > #### deleteByIds\(Object\[\] ids,Class&lt;T&gt; c\)
 
-```
+```java
 @Test
 public void testDelete(){
        mapper.deleteByIds(new Integer[]{1,2,3}, User.class);
@@ -50,7 +50,7 @@ public void testDelete(){
 
 > #### deleteByMap\(Map&lt;String,Object&gt; map ,Class&lt;T&gt; c\)
 
-```
+```java
 @Test
 public void testDelete(){
       mapper.deleteByMap(MapUtils.put("zone", "01090113").getMap(), User.class);

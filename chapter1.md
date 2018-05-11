@@ -39,16 +39,16 @@ prolog:
 @RequestMapping\("/product"\)  
 @ControllerLog\("测试-日志"\)  
 public class ProductController {
-@Autowired
-private IProductBiz productBiz;
-
-@ApiOperation(value="新增商品", notes="新增商品")
-@PostMapping("/0")
-@ControllerLog("新增商品")
-public RestMessage<?> saveProduct(Product product) throws Exception{
-productBiz.save(product);
-return RestMessage.newInstance(true, "保存成功",product.getId());
-}
+    @Autowired
+    private IProductBiz productBiz;
+    
+    @ApiOperation(value="新增商品", notes="新增商品")
+    @PostMapping("/0")
+    @ControllerLog("新增商品")
+    public RestMessage<?> saveProduct(Product product) throws Exception{
+    productBiz.save(product);
+    return RestMessage.newInstance(true, "保存成功",product.getId());
+    }
 ｝
 ```
 

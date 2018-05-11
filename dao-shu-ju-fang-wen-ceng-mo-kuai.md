@@ -8,7 +8,7 @@ plg-fx-dao
 
 > #### 引用
 
-```
+```xml
 <dependency>
      <groupId>com.prolog.framework</groupId>
      <artifactId>plg-fx-starter-dao</artifactId>
@@ -18,9 +18,9 @@ plg-fx-dao
 
 > #### 配置
 
-```
-prolog:
-  dao:
+```yaml
+prolog: 
+  dao :
     dialect: mysql
     pagehelper: #pagehelper分页插件配置
       helperDialect: ${prolog.dao.dialect}

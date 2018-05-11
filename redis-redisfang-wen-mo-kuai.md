@@ -18,7 +18,7 @@ plg-fx-redis
 
 > #### 配置
 
-```
+```yaml
 prolog:
   redis: #redis pool 配置
     maxTotal: 15 #最大连接数

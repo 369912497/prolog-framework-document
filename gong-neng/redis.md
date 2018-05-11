@@ -2,8 +2,8 @@
 
 框架提供了Redis连接池服务，配置如下：
 
-```
-prolog:
+```yaml
+prolog: 
   redis: #redis pool 配置
     maxTotal: 15 #最大连接数
     maxIdle: 10 #最大空闲连接数

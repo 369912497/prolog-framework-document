@@ -8,7 +8,7 @@ plg-fx-service
 
 > #### 引用
 
-```
+```xml
 <dependency>
      <groupId>com.prolog.framework</groupId>
      <artifactId>plg-fx-starter-service</artifactId>

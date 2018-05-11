@@ -37,5 +37,5 @@
 
 ## 快速开发工具
 
-* prolog-developer
+* [prolog-developer](kuai-su-kai-fa-gong-ju/prolog-developer.md)
 

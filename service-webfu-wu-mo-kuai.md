@@ -18,7 +18,7 @@ plg-fx-service
 
 > #### 配置
 
-```
+```yaml
 prolog:
   web:
     multipart:  #文件上传配置

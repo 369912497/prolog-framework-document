@@ -14,7 +14,7 @@ Page是对分页对象进行了封装（com.prolog.framework.core.pojo.Page）,�
 
 源码：
 
-```
+```java
 public class Page<T> implements Serializable{
 
     private static final long serialVersionUID = 1L;

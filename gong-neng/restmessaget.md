@@ -20,7 +20,7 @@ RestMessage.newInstance(true, "获取数据成功",User);
 
 将json字符串转为RestMessage对象
 
-```
+```java
 String url = "http://localhost:8888/napi/session/"+token;
 
 //｛success:true,message:'',data:{id:1,number:"0012120",name:"张三"}｝
@@ -32,7 +32,7 @@ UserDto userDto = msg.getData();
 
 源代码：
 
-```
+```java
 public class RestMessage<T> implements Message {
 
     @ApiModelProperty(value = "是否成功")

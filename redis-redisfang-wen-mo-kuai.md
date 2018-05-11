@@ -8,7 +8,7 @@ plg-fx-redis
 
 > #### 引用
 
-```
+```xml
 <dependency>
      <groupId>com.prolog.framework</groupId>
      <artifactId>plg-fx-starter-redis</artifactId>

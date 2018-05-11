@@ -20,7 +20,7 @@ plg-fx-dao
 
 ```yaml
 prolog: 
-  dao :
+  dao : 
     dialect: mysql
     pagehelper: #pagehelper分页插件配置
       helperDialect: ${prolog.dao.dialect}

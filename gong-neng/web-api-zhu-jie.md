@@ -2,9 +2,9 @@
 
 > #### 配置
 
-```
-prolog:
-  apidoc:
+```ymal
+prolog: 
+  apidoc: 
     title: 订单服务API文档
     basePackage: com.prolog.framework
     description: 订单服务api

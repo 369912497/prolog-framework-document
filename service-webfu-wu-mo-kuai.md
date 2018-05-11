@@ -38,7 +38,7 @@ prolog:
 
 * 文件上传，推荐实践：
 
-```
+```java
 @ApiOperation(value="文件上传测试")
     @PostMapping("/testupload")
     public RestMessage<String> uploadImg(@RequestParam("file") List<MultipartFile> files,HttpServletRequest request) throws IOException, Exception {

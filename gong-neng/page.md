@@ -2,7 +2,7 @@
 
 Page是对分页对象进行了封装（com.prolog.framework.core.pojo.Page）,通常在分页查询中使用：
 
-```
+```java
 @Override
     public Page<LmsTmsZone> getByCriteriaForPage(Criteria criteria, int pageNum, int pageSize) {
         // TODO Auto-generated method stub
@@ -15,90 +15,89 @@ Page是对分页对象进行了封装（com.prolog.framework.core.pojo.Page）,�
 源码：
 
 ```
-
 public class Page<T> implements Serializable{
-	
-	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty("数据列表")
-	private List<T> list;
-	
-	@ApiModelProperty("总记录数")
-	private long totalCount;
-	
-	@ApiModelProperty("总页数")
-	private int pageCount;
-	
-	@ApiModelProperty("当前页码")
-	private int pageNum;
-	
-	@ApiModelProperty("每页大小")
-	private int pageSize;
-	
-	@ApiModelProperty("当前页开始行")
+    private static final long serialVersionUID = 1L;
+
+    @ApiModelProperty("数据列表")
+    private List<T> list;
+
+    @ApiModelProperty("总记录数")
+    private long totalCount;
+
+    @ApiModelProperty("总页数")
+    private int pageCount;
+
+    @ApiModelProperty("当前页码")
+    private int pageNum;
+
+    @ApiModelProperty("每页大小")
+    private int pageSize;
+
+    @ApiModelProperty("当前页开始行")
     private int startRow;
-	
-	@ApiModelProperty("当前页结束行")
+
+    @ApiModelProperty("当前页结束行")
     private int endRow;
 
-	
-	public int getStartRow() {
-		return startRow;
-	}
 
-	public void setStartRow(int startRow) {
-		this.startRow = startRow;
-	}
+    public int getStartRow() {
+        return startRow;
+    }
 
-	public int getEndRow() {
-		return endRow;
-	}
+    public void setStartRow(int startRow) {
+        this.startRow = startRow;
+    }
 
-	public void setEndRow(int endRow) {
-		this.endRow = endRow;
-	}
+    public int getEndRow() {
+        return endRow;
+    }
 
-	public List<T> getList() {
-		return list;
-	}
+    public void setEndRow(int endRow) {
+        this.endRow = endRow;
+    }
 
-	public void setList(List<T> list) {
-		this.list = list;
-	}
+    public List<T> getList() {
+        return list;
+    }
 
-	public long getTotalCount() {
-		return totalCount;
-	}
+    public void setList(List<T> list) {
+        this.list = list;
+    }
 
-	public void setTotalCount(long totalCount) {
-		this.totalCount = totalCount;
-	}
+    public long getTotalCount() {
+        return totalCount;
+    }
 
-	public int getPageCount() {
-		return pageCount;
-	}
+    public void setTotalCount(long totalCount) {
+        this.totalCount = totalCount;
+    }
 
-	public void setPageCount(int pageCount) {
-		this.pageCount = pageCount;
-	}
+    public int getPageCount() {
+        return pageCount;
+    }
 
-	public int getPageNum() {
-		return pageNum;
-	}
+    public void setPageCount(int pageCount) {
+        this.pageCount = pageCount;
+    }
 
-	public void setPageNum(int pageNum) {
-		this.pageNum = pageNum;
-	}
+    public int getPageNum() {
+        return pageNum;
+    }
 
-	public int getPageSize() {
-		return pageSize;
-	}
+    public void setPageNum(int pageNum) {
+        this.pageNum = pageNum;
+    }
 
-	public void setPageSize(int pageSize) {
-		this.pageSize = pageSize;
-	}
-	
-	
+    public int getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize) {
+        this.pageSize = pageSize;
+    }
+
+
 }
 ```
 

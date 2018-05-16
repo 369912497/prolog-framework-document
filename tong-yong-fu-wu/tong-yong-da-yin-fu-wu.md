@@ -30,6 +30,8 @@
              //处理返回值
           }
 });
+
+//reportJsonData数据格式
 ```
 
 请求地址直接向[http://\(server\):6060/print发送打印请求，即可](http://%28server%29:6060/print发送打印请求，即可)

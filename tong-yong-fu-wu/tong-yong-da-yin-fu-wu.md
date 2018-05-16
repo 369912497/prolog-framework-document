@@ -32,6 +32,10 @@
 });
 
 //reportJsonData数据格式
+｛
+grf:'grfName',//模板名称
+data:reportData
+｝
 ```
 
 请求地址直接向[http://\(server\):6060/print发送打印请求，即可](http://%28server%29:6060/print发送打印请求，即可)

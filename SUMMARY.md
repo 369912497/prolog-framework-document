@@ -39,3 +39,7 @@
 
 * [prolog-developer](kuai-su-kai-fa-gong-ju/prolog-developer.md)
 
+## 通用服务
+
+* [通用打印服务](tong-yong-fu-wu/tong-yong-da-yin-fu-wu.md)
+

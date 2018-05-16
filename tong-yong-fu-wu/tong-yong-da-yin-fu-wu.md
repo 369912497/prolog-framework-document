@@ -23,7 +23,8 @@
  $.ajax({
  type: "POST",
  url: "http://localhost:6060/print", //打印服务地址，print是固定值
- data: {username:$("#username").val(), content:$("#content").val()},
+ data: {username:$("#username").val(), 
+ content:$("#content").val()},
  dataType: "json",
  success: function(data){
              $('#resText').empty();   //清空resText里面的所有内容

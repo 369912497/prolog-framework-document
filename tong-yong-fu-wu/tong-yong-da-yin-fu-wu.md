@@ -25,16 +25,10 @@
  url: "http://localhost:6060/print", //打印服务地址，print是固定值
  data: {username:$("#username").val(), 
  content:$("#content").val()},
+ contentType
  dataType: "json",
  success: function(data){
-             $('#resText').empty();   //清空resText里面的所有内容
-             var html = ''; 
-             $.each(data, function(commentIndex, comment){
-                   html += '<div class="comment"><h6>' + comment['username']
-                             + ':</h6><p class="para"' + comment['content']
-                             + '</p></div>';
-             });
-             $('#resText').html(html);
+             //处理返回值
           }
 });
 ```

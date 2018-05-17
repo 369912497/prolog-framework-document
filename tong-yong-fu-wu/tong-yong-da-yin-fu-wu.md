@@ -34,14 +34,11 @@
  dataType: "json",
  success: function(data){
              //处理返回值
+             //
           }
 });
 
-//reportJsonData数据格式
-｛
-grf:'grfName',//模板名称
-data:reportData
-｝
+
 ```
 
 reportJsonData数据格式

@@ -109,7 +109,7 @@ reportJsonData数据格式
 
 ![](/assets/import16.png)
 
-#### 打印机设置
+#### 打印机选择
 
 #### 模版设置
 

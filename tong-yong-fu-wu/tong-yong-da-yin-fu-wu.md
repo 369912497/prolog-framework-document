@@ -34,11 +34,9 @@
  dataType: "json",
  success: function(data){
              //处理返回值
-             //
+             //{"success":true,"message":"打印请求成功"}
           }
 });
-
-
 ```
 
 reportJsonData数据格式

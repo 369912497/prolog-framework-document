@@ -14,7 +14,7 @@ Web API 文档核心注解是在controller中，其中包含多个注解标签�
 @ApiImplicitParam(name="id",value="商品id",required = true,paramType = "path")//注解单个参数
 ```
 
-```
+```java
 //注解多个参数
 @ApiImplicitParams({
 @ApiImplicitParam(name = "pageNum", value = "页码", required = true, dataType = "int",paramType = "path"),
@@ -22,13 +22,9 @@ Web API 文档核心注解是在controller中，其中包含多个注解标签�
 })
 ```
 
-
-
-
-
 示例：
 
-```
+```java
 @Api(tags="产品服务")
 @RestController
 @RequestMapping("/product")

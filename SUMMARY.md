@@ -42,4 +42,6 @@
 ## 通用服务
 
 * [通用打印服务](tong-yong-fu-wu/tong-yong-da-yin-fu-wu.md)
+* [配置服务](tong-yong-fu-wu/pei-zhi-fu-wu.md)
+  * [描述服务](tong-yong-fu-wu/pei-zhi-fu-wu/miao-shu-fu-wu.md)
 

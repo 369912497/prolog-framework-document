@@ -41,6 +41,12 @@
 
 reportJsonData数据格式
 
+当数据类型选择"URL"时
+
+
+
+当数据类型选择"DATA"时：
+
 ```json
  {"url": "http://www.gridreport.cn/demos/grf/4d.grf",
     "printName":"Microsoft XPS Document Writer",

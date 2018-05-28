@@ -41,7 +41,7 @@
 
 reportJsonData数据格式
 
-当数据类型选择"URL"时
+当数据类型选择"URL"时：
 
 
 

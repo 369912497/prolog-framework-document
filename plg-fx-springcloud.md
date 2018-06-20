@@ -20,7 +20,7 @@ plg-fx-cloud
         <dependency>
              <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-parent</artifactId>
-            <version>Finchley.RC2</version>
+            <version>Finchley.M8</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -56,8 +56,6 @@ eureka:
 ```
 
 > #### 使用
-
-
 
 ```java
 @EnableDiscoveryClient

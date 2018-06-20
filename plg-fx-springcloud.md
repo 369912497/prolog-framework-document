@@ -60,7 +60,7 @@ eureka:
 * 直接使用JedisManager的静态方法
 
 ```java
-JedisManager.getString(key);
+@EnableDiscoveryClient
 ```
 
 

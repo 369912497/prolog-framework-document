@@ -57,7 +57,7 @@ eureka:
 
 > #### 使用
 
-* 直接使用JedisManager的静态方法
+
 
 ```java
 @EnableDiscoveryClient

@@ -26,11 +26,9 @@ plg-fx-authority-core
 
 在启动类上添加标签
 
-```
+```java
 @EnablePrologSecurityServer(resourceConfig=true,webConfig=true)
 ```
 
 @EnablePrologSecurityServer有两个参数resourceConfig和webConfig
-
-
 

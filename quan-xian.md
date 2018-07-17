@@ -36,7 +36,7 @@ plg-fx-authority-core
 
 * webConfig为true是启用web拦截（使用框架提供的WebSecurityConfigurerAdapter），须实现IUserService接口和IAuthorityService接口
 
+* 若使用自定义的ResourceServerConfigurerAdapter和WebSecurityConfigurerAdapter，可配置@EnablePrologSecurityServer\(resourceConfig=false,webConfig=false\)
 
 
-若使用自定义的ResourceServerConfigurerAdapter和WebSecurityConfigurerAdapter，可配置@EnablePrologSecurityServer\(resourceConfig=false,webConfig=false\)
 

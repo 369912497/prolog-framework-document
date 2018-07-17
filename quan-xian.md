@@ -23,7 +23,15 @@ spring:
   redis:
     host: 192.168.0.206
     port: 6379
-    password: prolog0212 
+    password: prolog0212
+    
+#当标识为资源服务时，须配置如下参数
+prolog: 
+  security: 
+    oauth: 
+      server: service-authorization #认证服务名
+      clientId: prolog-gateway #客户端id
+      clientSecret: 123456 #客户端密码
 ```
 
 > #### 使用

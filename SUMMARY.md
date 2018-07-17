@@ -7,12 +7,17 @@
 ## 开发框架
 
 * [ web api文档 plg-fx-apidoc](chapter1.md)
+  * [Web api 注解](gong-neng/web-api-zhu-jie.md)
+    * [注解pojo](gong-neng/web-api-zhu-jie/zhu-jie-pojo.md)
+    * [注解controller](gong-neng/web-api-zhu-jie/zhu-jie-controller.md)
 * [日志 plg-fx-log](plg-fx-log.md)
 * [核心模块 plg-fx-core](plg-fx-core.md)
 * [通用功能模块 plg-fx-common](common-tong-yong-gong-neng-mo-kuai.md)
+  * [RestMessage&lt;T&gt;](gong-neng/restmessaget.md)
 * [数据访问 plg-fx-dao](dao-shu-ju-fang-wen-ceng-mo-kuai.md)
   * [BaseMapper](gong-neng/basemapper.md)
   * [Criteria](gong-neng/basemapper/criteria.md)
+  * [Page](gong-neng/page.md)
   * [MapUtils](gong-neng/basemapper/maputils.md)
   * [Entity注解](gong-neng/basemapper/entityzhu-jie.md)
     * [@Table](gong-neng/basemapper/entityzhu-jie/table.md)
@@ -23,19 +28,11 @@
     * [@One](gong-neng/basemapper/entityzhu-jie/one.md)
   * [FieldSelector](gong-neng/basemapper/fieldselector.md)
 * [web服务 plg-fx-service](service-webfu-wu-mo-kuai.md)
+  * [文件上传/下载](wen-jian-shang-chuan.md)
 * [redis访问模块 plg-fx-redis](redis-redisfang-wen-mo-kuai.md)
+  * [JedisManager](gong-neng/redis.md)
 * [plg-fx-springcloud](plg-fx-springcloud.md)
 * [权限 plg-fx-authority-core](quan-xian.md)
-
-## 功能
-
-* [redis](gong-neng/redis.md)
-* [RestMessage&lt;T&gt;](gong-neng/restmessaget.md)
-* [Page](gong-neng/page.md)
-* [Web api 注解](gong-neng/web-api-zhu-jie.md)
-  * [注解pojo](gong-neng/web-api-zhu-jie/zhu-jie-pojo.md)
-  * [注解controller](gong-neng/web-api-zhu-jie/zhu-jie-controller.md)
-* [文件上传/下载](wen-jian-shang-chuan.md)
 
 ## 快速开发工具
 

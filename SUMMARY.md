@@ -4,23 +4,15 @@
 
 * [概述](README.md)
 
-## 快速使用
+## 开发框架
 
-* [log - 日志模块](plg-fx-log.md)
-* [apidoc - web api文档模块](chapter1.md)
-* [core - 核心模块](plg-fx-core.md)
-* [common - 通用功能模块](common-tong-yong-gong-neng-mo-kuai.md)
-* [dao - 数据访问层模块](dao-shu-ju-fang-wen-ceng-mo-kuai.md)
-* [service - web服务模块](service-webfu-wu-mo-kuai.md)
-* [redis - redis访问模块](redis-redisfang-wen-mo-kuai.md)
-* [plg-fx-springcloud](plg-fx-springcloud.md)
-* [权限](quan-xian.md)
-
-## 功能
-
-* [BaseMapper](gong-neng/basemapper.md)
+* [ web api文档 plg-fx-apidoc](chapter1.md)
+* [日志 plg-fx-log](plg-fx-log.md)
+* [核心模块 plg-fx-core](plg-fx-core.md)
+* [通用功能模块 plg-fx-common](common-tong-yong-gong-neng-mo-kuai.md)
+* [数据访问 plg-fx-dao](dao-shu-ju-fang-wen-ceng-mo-kuai.md)
+  * [BaseMapper](gong-neng/basemapper.md)
   * [Criteria](gong-neng/basemapper/criteria.md)
-  * [FieldSelector](gong-neng/basemapper/fieldselector.md)
   * [MapUtils](gong-neng/basemapper/maputils.md)
   * [Entity注解](gong-neng/basemapper/entityzhu-jie.md)
     * [@Table](gong-neng/basemapper/entityzhu-jie/table.md)
@@ -29,6 +21,14 @@
     * [@AutoKey](gong-neng/basemapper/entityzhu-jie/autokey.md)
     * [@Ignore](gong-neng/basemapper/entityzhu-jie/ignore.md)
     * [@One](gong-neng/basemapper/entityzhu-jie/one.md)
+  * [FieldSelector](gong-neng/basemapper/fieldselector.md)
+* [web服务 plg-fx-service](service-webfu-wu-mo-kuai.md)
+* [redis访问模块 plg-fx-redis](redis-redisfang-wen-mo-kuai.md)
+* [plg-fx-springcloud](plg-fx-springcloud.md)
+* [权限 plg-fx-authority-core](quan-xian.md)
+
+## 功能
+
 * [redis](gong-neng/redis.md)
 * [RestMessage&lt;T&gt;](gong-neng/restmessaget.md)
 * [Page](gong-neng/page.md)

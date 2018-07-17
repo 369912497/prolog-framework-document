@@ -19,7 +19,11 @@ plg-fx-authority-core
 > #### 配置
 
 ```yaml
-
+spring:
+  redis:
+    host: 192.168.0.206
+    port: 6379
+    password: prolog0212 
 ```
 
 > #### 使用

@@ -30,5 +30,7 @@ plg-fx-authority-core
 @EnablePrologSecurityServer(resourceConfig=true,webConfig=true)
 ```
 
+@EnablePrologSecurityServer有两个参数resourceConfig和webConfig
+
 
 

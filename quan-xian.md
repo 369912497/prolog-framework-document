@@ -11,32 +11,9 @@ plg-fx-authority-core
 ```xml
 <dependency>
      <groupId>com.prolog.framework</groupId>
-     <artifactId>plg-fx-springcloud</artifactId>
+     <artifactId>plg-fx-authority-core</artifactId>
      <version>${plg.fx.verison}</version>
  </dependency>
-
- <dependencyManagement>
-    <dependencies>
-        <dependency>
-             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-parent</artifactId>
-            <version>Finchley.M8</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
-
-<repositories>
-  <repository>
-      <id>spring-milestones</id>
-      <name>Spring Milestones</name>
-      <url>https://repo.spring.io/libs-milestone</url>
-      <snapshots>
-          <enabled>false</enabled>
-      </snapshots>
-  </repository>
-</repositories>
 ```
 
 > #### 配置

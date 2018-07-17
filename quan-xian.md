@@ -24,8 +24,10 @@ plg-fx-authority-core
 
 > #### 使用
 
-```java
-@EnableDiscoveryClient
+在启动类上添加标签
+
+```
+@EnablePrologSecurityServer(resourceConfig=true,webConfig=true)
 ```
 
 

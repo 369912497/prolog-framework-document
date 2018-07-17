@@ -3,7 +3,7 @@
 > #### 模块名称
 
 ```
-plg-fx-cloud
+plg-fx-authority-core
 ```
 
 > #### 引用

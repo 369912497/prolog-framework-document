@@ -34,5 +34,5 @@ plg-fx-authority-core
 
 resourceConfig为true是启用资源服务，须实现IAuthorityService接口
 
-webConfig为true是启用web拦截
+webConfig为true是启用web拦截，须实现IUserService接口和IAuthorityService
 

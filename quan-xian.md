@@ -30,5 +30,9 @@ plg-fx-authority-core
 @EnablePrologSecurityServer(resourceConfig=true,webConfig=true)
 ```
 
-@EnablePrologSecurityServer有两个参数resourceConfig和webConfig
+@EnablePrologSecurityServer有两个参数resourceConfig和webConfig，他们都是boolean类型的。
+
+resourceConfig为true是启用资源服务，须实现IAuthorityService接口
+
+webConfig为true是启用web拦截
 

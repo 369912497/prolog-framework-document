@@ -24,8 +24,8 @@ spring:
     host: 192.168.0.206
     port: 6379
     password: prolog0212
-    
-#当标识为资源服务时，须配置如下参数
+
+#当作为客户端时，须配置如下参数
 prolog: 
   security: 
     oauth: 

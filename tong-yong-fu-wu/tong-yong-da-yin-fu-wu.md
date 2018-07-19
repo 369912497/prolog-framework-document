@@ -46,6 +46,7 @@ reportJsonData数据格式
 ```json
  {"url": "http://www.gridreport.cn/demos/grf/4d.grf",
     "printName":"Microsoft XPS Document Writer",
+    "printSolution":"solution1",
     "data":"http://www.gridreport.cn/demos/data/DataCenter.ashx?data=SubReport_4d&city=%E5%A4%A9%E6%B4%A5"
  }
 ```

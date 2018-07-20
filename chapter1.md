@@ -52,7 +52,7 @@ public class ProductController {
 ｝
 ```
 
-* 通过@ApiOperation中nickname可标识operationId（默认为方法名），文档通过operationId进行排序
+* **通过@ApiOperation中nickname可标识operationId（默认为方法名），文档通过operationId进行排序**
 * 启动项目访问地址：[http://host:port/contextpath/apidoc.html](http://host:port/contextpath/apidoc.html)
 
 > #### 补充说明

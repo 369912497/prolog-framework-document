@@ -15,6 +15,7 @@
 ### 使用
 
 开发微服务引入plg-fx-springboot-parent
+开发分布式式服务继承plg-fx-springcloud-parent
 
 
 

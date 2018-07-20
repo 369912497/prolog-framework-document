@@ -42,7 +42,7 @@ public class ProductController {
     @Autowired
     private IProductBiz productBiz;
 
-    @ApiOperation(value="新增商品", notes="新增商品")
+    @ApiOperation(value="新增商品", notes="新增商品",nickname="a")
     @PostMapping("/0")
     @ControllerLog("新增商品")
     public RestMessage<?> saveProduct(Product product) throws Exception{
@@ -52,6 +52,7 @@ public class ProductController {
 ｝
 ```
 
+* 通过@ApiOperation中nickname可标识operationId（默认为方法名），文档通过operationId进行排序
 * 启动项目访问地址：[http://host:port/contextpath/apidoc.html](http://host:port/contextpath/apidoc.html)
 
 > #### 补充说明

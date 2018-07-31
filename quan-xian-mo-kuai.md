@@ -9,17 +9,11 @@ plg-fx-authority-core
 > #### 引用
 
 ```xml
-    <parent>
-        <groupId>com.prolog.framework</groupId>
-          <artifactId>plg-fx-springcloud-parent</artifactId>
-          <version>${plg.fx.verison}</version>
-    </parent>
-
-<dependency>
-     <groupId>com.prolog.framework</groupId>
-     <artifactId>plg-fx-microservice</artifactId>
-     <version>${plg.fx.verison}</version>
- </dependency>
+   <dependency>
+    	<groupId>com.prolog.framework</groupId>
+    	<artifactId>plg-fx-authorization-core</artifactId>
+    	<version>${prolog.framework.version}</version>
+    </dependency>
 ```
 
 > #### 配置

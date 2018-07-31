@@ -382,35 +382,9 @@ public class MyAuthorityServiceImpl implements IAuthorityService{
 }
 ```
 
-7、启动类
 
-```java
-package com.prolog.framework.cs.resource;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
-
-import com.prolog.framework.authority.core.annotation.EnablePrologSecurityServer;
-import com.prolog.framework.microservice.annotation.EnablePrologService;
-
-@SpringBootApplication()
-@EnablePrologService
-@EnablePrologSecurityServer(resourceConfig=true,webConfig=false)
-@EnableTransactionManagement
-@MapperScan("com.prolog.framework.cs.resource.dao")
-public class ResourceApplication {
-
-    public static void main( String[] args )
-    {
-        SpringApplication.run(ResourceApplication .class, args);
-    }
-
-}
-```
-
-8、application.yml配置
+7、application.yml配置
 
 ```yaml
 #eureka client配置
@@ -484,7 +458,7 @@ prolog:
       mapperLocations: classpath:mappers/*.xml
 ```
 
-9、jdbc配置
+8、jdbc配置
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/springboottest?useSSL=false&serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
@@ -506,7 +480,7 @@ spring.datasource.maxWait=60000
 spring.datasource.minEvictableIdleTimeMillis=25200000
 ```
 
-10、log4j2配置
+9、log4j2配置
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -538,7 +512,7 @@ spring.datasource.minEvictableIdleTimeMillis=25200000
          <File name="log" fileName="log/test.log" append="false">
 
              <!-- <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/> -->
-				<PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level- %msg%xEx%n"/>
+                <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level- %msg%xEx%n"/>
          </File>
 
          <!-- 这个会打印出所有的info及以下级别的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档-->
@@ -635,6 +609,34 @@ spring.datasource.minEvictableIdleTimeMillis=25200000
      </loggers>
 
  </configuration>
+```
+
+10、启动类
+
+```java
+package com.prolog.framework.cs.resource;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.prolog.framework.authority.core.annotation.EnablePrologSecurityServer;
+import com.prolog.framework.microservice.annotation.EnablePrologService;
+
+@SpringBootApplication()
+@EnablePrologService
+@EnablePrologSecurityServer(resourceConfig=true,webConfig=false)
+@EnableTransactionManagement
+@MapperScan("com.prolog.framework.cs.resource.dao")
+public class ResourceApplication {
+
+    public static void main( String[] args )
+    {
+        SpringApplication.run(ResourceApplication .class, args);
+    }
+
+}
 ```
 
 

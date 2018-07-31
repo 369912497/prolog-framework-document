@@ -382,7 +382,7 @@ public class MyAuthorityServiceImpl implements IAuthorityService{
 
 7、启动类
 
-```
+```java
 package com.prolog.framework.cs.resource;
 
 import org.mybatis.spring.annotation.MapperScan;

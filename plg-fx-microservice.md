@@ -70,9 +70,5 @@ public class AuthorizationApplication {
 }
 ```
 
-添加此注解后，系统会自动生成一个RestTemplate的bean。通过参数loadBalanced来控制是否启用负载均衡，默认为true，当开启负载均衡时，将自动配置@FeignClient
-
-
-
-
+添加此注解后，系统会自动生成一个RestTemplate的bean。通过参数loadBalanced来控制是否启用负载均衡，默认为true，当开启负载均衡时，将自动配置@EnableFeignClients
 

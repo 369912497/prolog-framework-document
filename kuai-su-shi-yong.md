@@ -408,5 +408,7 @@ public class ResourceApplication {
 }
 ```
 
+8、application.yml配置
+
 
 

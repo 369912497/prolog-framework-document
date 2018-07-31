@@ -40,9 +40,12 @@ eureka:
 
 > #### 使用
 
-* 模块包含了注解@EnablePrologService，此注解包含了@Configuration  、@EnableDiscoveryClient  、@FeignClient  、@EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上
+* 模块包含了注解@EnablePrologService，此注解包含了@Configuration
+  、@EnableDiscoveryClient
+  、@FeignClient
+  、@EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上
 
-```
+```java
 package com.prolog.framework.cs.authorization;
 
 import org.mybatis.spring.annotation.MapperScan;
@@ -60,13 +63,12 @@ import com.prolog.framework.microservice.annotation.EnablePrologService;
 @MapperScan("com.prolog.framework.cs.authorization.dao")
 public class AuthorizationApplication {
 
-	public static void main( String[] args )
+    public static void main( String[] args )
     {
-    	SpringApplication.run(AuthorizationApplication.class, args);
+        SpringApplication.run(AuthorizationApplication.class, args);
     }
 
 }
-
 ```
 
 

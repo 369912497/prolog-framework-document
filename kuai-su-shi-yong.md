@@ -414,9 +414,9 @@ public class ResourceApplication {
 
 ```yaml
 #eureka client配置
-eureka:
-  client:
-    serviceUrl:
+eureka: 
+  client: 
+    serviceUrl: 
       defaultZone: http://127.0.0.1:8761/eureka/
   instance: 
     # 注册时使用ip而不是主机名

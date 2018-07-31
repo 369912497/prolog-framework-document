@@ -31,11 +31,11 @@
   * [Web api 注解](gong-neng/web-api-zhu-jie.md)
     * [注解pojo](gong-neng/web-api-zhu-jie/zhu-jie-pojo.md)
     * [注解controller](gong-neng/web-api-zhu-jie/zhu-jie-controller.md)
-* [日志 plg-fx-log](plg-fx-log.md)
 * [plg-fx-springboot-parent](plg-fx-springboot-parent.md)
 * [plg-fx-springcloud-parent](plg-fx-springcloud-parent.md)
 * [微服务 plg-fx-microservice](plg-fx-microservice.md)
 * [权限 plg-fx-authority-core](quan-xian.md)
+* [日志 plg-fx-log](plg-fx-log.md)
 
 ## 快速开发工具
 
@@ -44,6 +44,4 @@
 ## 通用服务
 
 * [通用打印服务](tong-yong-fu-wu/tong-yong-da-yin-fu-wu.md)
-* [配置服务](tong-yong-fu-wu/pei-zhi-fu-wu.md)
-  * [描述服务](tong-yong-fu-wu/pei-zhi-fu-wu/miao-shu-fu-wu.md)
 

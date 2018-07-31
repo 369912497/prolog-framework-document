@@ -40,10 +40,12 @@ eureka:
 
 > #### 使用
 
-* 模块包含了注解@EnablePrologService，此注解包含了@Configuration
-  、@EnableDiscoveryClient
-  、@FeignClient
-  、@EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上
+模块包含了注解@EnablePrologService，此注解包含了如下四个注解
+
+* @Configuration
+* @EnableDiscoveryClient
+* @FeignClient
+* @EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上
 
 ```java
 package com.prolog.framework.cs.authorization;

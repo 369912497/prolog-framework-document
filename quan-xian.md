@@ -49,9 +49,13 @@ prolog:
 
 * 若使用自定义的ResourceServerConfigurerAdapter和WebSecurityConfigurerAdapter，可配置@EnablePrologSecurityServer\(resourceConfig=false,webConfig=false\)
 
-```
+
+
+```java
 @EnablePrologTokenInterceptor
 ```
+
+@EnablePrologTokenInterceptor
 
 
 

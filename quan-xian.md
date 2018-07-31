@@ -27,11 +27,10 @@ spring:
 
 #当作为客户端时，须配置如下参数
 prolog: 
-  security: 
-    oauth: 
-      server: service-authorization #认证服务名
-      clientId: prolog-gateway #客户端id
-      clientSecret: 123456 #客户端密码
+  ms: 
+    clientId: ${spring.application.name}
+    clientSecret: prolog0212
+    oauthServer: service-authorization
 ```
 
 > #### 使用

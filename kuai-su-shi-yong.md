@@ -441,7 +441,7 @@ management:
 
 spring: 
   application: 
-    name: service-authorization
+    name: service-resource
   datasource: 
     url: jdbc:mysql://localhost:3306/springboottest?useSSL=false&serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
     username: root

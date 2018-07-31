@@ -196,6 +196,26 @@ import com.prolog.framework.dao.mapper.BaseMapper;
 public interface ResourceMapper extends BaseMapper<Resource> {
 
 }
+```
+
+4、服务接口层
+
+```java
+package com.prolog.framework.cs.authorization.service;
+
+import java.util.List;
+
+import com.prolog.framework.core.pojo.Page;
+import com.prolog.framework.cs.authorization.model.Resource;
+
+public interface IResourceService {
+	void add(Resource resource) throws Exception;
+	void delete(String id);
+	void update(Resource resource) throws Exception;
+	Page<Resource> getLike(String serviceName,String authNumber,String resource,int pageNo,int pageSize);
+	List<Resource> getByServiceName(String serviceName);
+	List<Resource> getAll();
+}
 
 ```
 

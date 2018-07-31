@@ -25,6 +25,7 @@
   * [FieldSelector](gong-neng/basemapper/fieldselector.md)
 * [web服务](service-webfu-wu-mo-kuai.md)
   * [文件上传/下载](wen-jian-shang-chuan.md)
+  * [全局异常处理](quan-ju-yi-chang-chu-li.md)
 * [redis访问模块](redis-redisfang-wen-mo-kuai.md)
   * [JedisManager](gong-neng/redis.md)
 * [ web api文档 plg-fx-apidoc](chapter1.md)

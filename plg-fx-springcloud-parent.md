@@ -10,6 +10,13 @@
 具体配置如下：
 
 ```xml
+plg-fx-springboot-parent
+本模块是一个maven pom项目，主要做了四个方面的配置
+springboot配置，配置了spring-boot-starter、spring-boot-starter-aop、spring-boot-starter-web
+spring事务模块配置，spring-tx
+日志配置，spring-boot-starter-log4j2
+spingboot编译插件配置及源码打包插件配置
+具体配置如下：
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -102,6 +109,7 @@
 
 
 </project>
+
 ```
 
 

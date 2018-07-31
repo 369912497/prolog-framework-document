@@ -58,9 +58,6 @@ import com.prolog.framework.microservice.annotation.EnablePrologService;
 
 @SpringBootApplication()
 @EnablePrologService(loadBalanced=true)
-@EnablePrologSecurityServer(resourceConfig=true,webConfig=false)
-@EnableTransactionManagement
-@MapperScan("com.prolog.framework.cs.authorization.dao")
 public class AuthorizationApplication {
 
     public static void main( String[] args )

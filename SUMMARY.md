@@ -3,6 +3,7 @@
 ## 简介
 
 * [概述](README.md)
+* [快速使用](kuai-su-shi-yong.md)
 
 ## 开发框架
 

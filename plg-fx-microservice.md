@@ -40,14 +40,12 @@ eureka:
 
 > #### 使用
 
-模块包含了注解@EnablePrologService，此注解包含了如下四个注解
+模块包含了注解@EnablePrologService，此注解包含了如下注解
 
 * @Configuration
 * @EnableDiscoveryClient
-* @FeignClient
+
 * @EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上。
-
-
 
 ```java
 package com.prolog.framework.cs.authorization;
@@ -72,5 +70,9 @@ public class AuthorizationApplication {
 }
 ```
 
-添加此注解后，系统会自动生成一个RestTemplate的bean。通过参数loadBalanced来控制是否启用负载均衡
+添加此注解后，系统会自动生成一个RestTemplate的bean。通过参数loadBalanced来控制是否启用负载均衡，默认为true，当开启负载均衡时，将自动配置@FeignClient
+
+
+
+
 

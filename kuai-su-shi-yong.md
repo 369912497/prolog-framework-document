@@ -35,32 +35,36 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
-
+    
+    <!--引入数据持久层框架-->
     <dependency>
         <groupId>com.prolog.framework</groupId>
         <artifactId>plg-fx-starter-dao</artifactId>
         <version>${prolog.framework.version}</version>
     </dependency>
 
+    <!--引入web层框架-->
      <dependency>
         <groupId>com.prolog.framework</groupId>
         <artifactId>plg-fx-starter-web</artifactId>
         <version>${prolog.framework.version}</version>
     </dependency>
-
+    
+    <!--引入api自动生成框架-->
     <dependency>
         <groupId>com.prolog.framework</groupId>
         <artifactId>plg-fx-starter-apidoc</artifactId>
         <version>${prolog.framework.version}</version>
     </dependency>
 
-
+    <!--引入通用功能模块-->
     <dependency>
         <groupId>com.prolog.framework</groupId>
         <artifactId>plg-fx-common</artifactId>
         <version>${prolog.framework.version}</version>
     </dependency>
 
+    <!--引入权限框架框架-->
     <dependency>
         <groupId>com.prolog.framework</groupId>
         <artifactId>plg-fx-authorization-core</artifactId>
@@ -73,6 +77,7 @@
         <version>${prolog.framework.version}</version>
     </dependency>
 
+    <!--springboot测试依赖-->
      <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -85,6 +90,7 @@
             <scope>test</scope>
         </dependency>
 
+    <!--springboot开发工具，实现热部署-->
     <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

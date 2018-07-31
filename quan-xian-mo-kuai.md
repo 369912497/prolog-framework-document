@@ -1,9 +1,9 @@
-## 权限模块plg-fx-microservice
+## 权限模块
 
 > #### 模块名称
 
 ```
-plg-fx-microservice
+plg-fx-authority-core
 ```
 
 > #### 引用

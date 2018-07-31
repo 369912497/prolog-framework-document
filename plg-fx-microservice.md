@@ -9,10 +9,10 @@ plg-fx-microservice
 > #### 引用
 
 ```xml
-	<parent>
+    <parent>
         <groupId>com.prolog.framework</groupId>
-  		<artifactId>plg-fx-springcloud-parent</artifactId>
-  		<version>${plg.fx.verison}</version>
+          <artifactId>plg-fx-springcloud-parent</artifactId>
+          <version>${plg.fx.verison}</version>
     </parent>
 
 <dependency>
@@ -25,11 +25,18 @@ plg-fx-microservice
 > #### 配置
 
 ```yaml
-#日志配置文件,在引用中添加以下配置
-prolog: 
-  log: 
-    implement: com.prolog.framework.log.service.FileLogService #日志实现类全名
-    logFilePath: d:/prolog-log.txt #对应实现类需要的参数
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance: 
+    # 注册时使用ip而不是主机名
+    preferIpAddress: true
+    instanceId: ${server.ipAddress}:${server.port}
+    health-check-url-path: /actuator/health
+    # 状态地址为api地址
+    statusPageUrlPath: /${server.servlet.contextpath}/apidoc.html
+
 ```
 
 > #### 使用

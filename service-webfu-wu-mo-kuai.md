@@ -3,7 +3,7 @@
 > #### 模块名称
 
 ```
-plg-fx-service
+plg-fx-web
 ```
 
 > #### 引用

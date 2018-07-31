@@ -35,7 +35,7 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
-    
+
     <!--引入数据持久层框架-->
     <dependency>
         <groupId>com.prolog.framework</groupId>
@@ -49,7 +49,7 @@
         <artifactId>plg-fx-starter-web</artifactId>
         <version>${prolog.framework.version}</version>
     </dependency>
-    
+
     <!--引入api自动生成框架-->
     <dependency>
         <groupId>com.prolog.framework</groupId>
@@ -77,6 +77,13 @@
         <version>${prolog.framework.version}</version>
     </dependency>
 
+    <!--微服务框架-->
+    <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-microservice</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
     <!--springboot测试依赖-->
      <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -97,11 +104,7 @@
             <optional>true</optional>
         </dependency>
 
-    <dependency>
-        <groupId>com.prolog.framework</groupId>
-        <artifactId>plg-fx-microservice</artifactId>
-        <version>${prolog.framework.version}</version>
-    </dependency>
+  
 
   </dependencies>
 

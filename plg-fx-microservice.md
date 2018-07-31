@@ -9,9 +9,15 @@ plg-fx-microservice
 > #### 引用
 
 ```xml
+	<parent>
+        <groupId>com.prolog.framework</groupId>
+  		<artifactId>plg-fx-springcloud-parent</artifactId>
+  		<version>${plg.fx.verison}</version>
+    </parent>
+
 <dependency>
      <groupId>com.prolog.framework</groupId>
-     <artifactId>plg-fx-starter-log</artifactId>
+     <artifactId>plg-fx-microservice</artifactId>
      <version>${plg.fx.verison}</version>
  </dependency>
 ```

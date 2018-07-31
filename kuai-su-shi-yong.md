@@ -484,7 +484,7 @@ prolog:
       pageSizeZero: false
       params: count=countSql
     #公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
-    mybatis:
+    mybatis: 
       typeAliasesPackage: com.prolog.cs.authorization.client.model
       mapperLocations: classpath:mappers/*.xml
 ```

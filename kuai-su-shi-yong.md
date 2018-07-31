@@ -1,4 +1,6 @@
-### 快速使用
+```
+快速使用
+```
 
 使用prolog framework快速开发一个微服务，以一个资源服务为示例
 
@@ -409,6 +411,86 @@ public class ResourceApplication {
 ```
 
 8、application.yml配置
+
+```java
+#eureka client配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance: 
+    # 注册时使用ip而不是主机名
+    preferIpAddress: true
+    instanceId: ${server.ipAddress}:${server.port}
+    health-check-url-path: /actuator/health
+    # 状态地址为api地址
+    statusPageUrlPath: /${server.servlet.contextpath}/apidoc.html
+
+  
+server:
+  ipAddress: 127.0.0.1
+  port: 8800  
+  servlet: 
+    contextpath: 
+    
+management:
+  endpoints: 
+    web: 
+      exposure: 
+        include: "*"
+        
+spring:
+  application:
+    name: service-authorization
+  datasource: 
+    url: jdbc:mysql://localhost:3306/springboottest?useSSL=false&serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: 123
+    driverClassName: com.mysql.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: prolog0212 
+  zipkin: 
+    base-url: http://localhost:9411
+  sleuth: 
+    enable: true
+    sampler: 
+      probability: 1.0
+  devtools: 
+    restart: 
+      enabled: true
+
+prolog: 
+  resourceId: ${spring.application.name}
+  security: 
+    oauth: 
+      accessTokenExpires: 720 #分钟
+      refreshTokenExpires: 10080 #分钟
+    manager: 
+      username: root
+      password: root
+  apidoc: #api文档配置文件
+    title: 客户端权限服务
+    basePackage: com.prolog
+    description: 客户端权限服务
+    version: 1.0
+  dao: 
+    dialect: mysql
+    pagehelper: #pagehelper分页插件配置
+      helperDialect: ${prolog.dao.dialect}
+      reasonable: true
+      supportMethodsArguments: true
+      pageSizeZero: false
+      params: count=countSql
+    #公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
+    mybatis:
+      typeAliasesPackage: com.prolog.cs.authorization.client.model
+      mapperLocations: classpath:mappers/*.xml
+  
+      
+  
+```
 
 
 

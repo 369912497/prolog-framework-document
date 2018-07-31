@@ -33,6 +33,7 @@
     * [注解pojo](gong-neng/web-api-zhu-jie/zhu-jie-pojo.md)
     * [注解controller](gong-neng/web-api-zhu-jie/zhu-jie-controller.md)
 * [日志 plg-fx-log](plg-fx-log.md)
+* [plg-fx-springboot-parent](plg-fx-springboot-parent.md)
 
 ## 快速开发工具
 

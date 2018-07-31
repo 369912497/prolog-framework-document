@@ -427,13 +427,13 @@ eureka:
     statusPageUrlPath: /${server.servlet.contextpath}/apidoc.html
 
 
-server:
+server: 
   ipAddress: 127.0.0.1
   port: 8800  
   servlet: 
     contextpath: 
 
-management:
+management: 
   endpoints: 
     web: 
       exposure: 

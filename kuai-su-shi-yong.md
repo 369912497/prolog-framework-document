@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.prolog.framework</groupId>
-  <artifactId>plg-cs-authorization</artifactId>
+  <artifactId>plg-cs-resource</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
@@ -22,12 +22,12 @@
     <prolog.framework.version>1.0.0</prolog.framework.version>
   </properties>
 
-	<parent>
+    <parent>
         <groupId>com.prolog.framework</groupId>
-  		<artifactId>plg-fx-springcloud-parent</artifactId>
-  		<version>1.0.0</version>
+          <artifactId>plg-fx-springcloud-parent</artifactId>
+          <version>1.0.0</version>
     </parent>
-    
+
 
   <dependencies>
     <dependency>
@@ -35,73 +35,72 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
-    
-    <dependency>
-    	<groupId>com.prolog.framework</groupId>
-    	<artifactId>plg-fx-starter-dao</artifactId>
-    	<version>${prolog.framework.version}</version>
-    </dependency>
-    
-     <dependency>
-    	<groupId>com.prolog.framework</groupId>
-    	<artifactId>plg-fx-starter-web</artifactId>
-    	<version>${prolog.framework.version}</version>
-    </dependency>
-    
-    <dependency>
-    	<groupId>com.prolog.framework</groupId>
-    	<artifactId>plg-fx-starter-apidoc</artifactId>
-    	<version>${prolog.framework.version}</version>
-    </dependency>
-    
-	
-	<dependency>
-    	<groupId>com.prolog.framework</groupId>
-    	<artifactId>plg-fx-common</artifactId>
-    	<version>${prolog.framework.version}</version>
-    </dependency>
-    
-    <dependency>
-    	<groupId>com.prolog.framework</groupId>
-    	<artifactId>plg-fx-authorization-core</artifactId>
-    	<version>${prolog.framework.version}</version>
-    </dependency>
-    
-    <dependency>
-    	<groupId>com.prolog.framework</groupId>
-    	<artifactId>plg-cs-authorization-facade</artifactId>
-    	<version>${prolog.framework.version}</version>
-    </dependency>
-    
-	 <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<exclusions>
-		        <exclusion>
-		            <groupId>org.springframework.boot</groupId>
-		            <artifactId>spring-boot-starter-logging</artifactId>
-		        </exclusion>
-		    </exclusions>
-			<scope>test</scope>
-		</dependency>
-		
-    <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>
-		</dependency>
-		
-	<dependency>
-    	<groupId>com.prolog.framework</groupId>
-		<artifactId>plg-fx-microservice</artifactId>
-		<version>${prolog.framework.version}</version>
-    </dependency>
-    
-  </dependencies>
-  
-    
-</project>
 
+    <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-starter-dao</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
+     <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-starter-web</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-starter-apidoc</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
+
+    <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-common</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-authorization-core</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-cs-authorization-facade</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
+     <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+
+    <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+    <dependency>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-microservice</artifactId>
+        <version>${prolog.framework.version}</version>
+    </dependency>
+
+  </dependencies>
+
+
+</project>
 ```
 
 

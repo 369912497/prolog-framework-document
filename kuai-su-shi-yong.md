@@ -442,12 +442,7 @@ management:
 spring: 
   application: 
     name: service-resource
-  datasource: 
-    url: jdbc:mysql://localhost:3306/springboottest?useSSL=false&serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
-    username: root
-    password: 123
-    driverClassName: com.mysql.jdbc.Driver
-  redis:
+  redis: 
     host: 127.0.0.1
     port: 6379
     password: prolog0212 

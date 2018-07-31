@@ -33,7 +33,7 @@ prolog:
 * 异常输出为：
 
 ```json
-｛ "success":false,"message":e.getMessage(),"data":null｝
+｛ "success":false,"message":e.getMessage(),"data":e.getMessage()｝
 ```
 
 * 文件上传，推荐实践：

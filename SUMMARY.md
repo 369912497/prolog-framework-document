@@ -27,7 +27,6 @@
   * [文件上传/下载](wen-jian-shang-chuan.md)
 * [redis访问模块](redis-redisfang-wen-mo-kuai.md)
   * [JedisManager](gong-neng/redis.md)
-* [权限 plg-fx-authority-core](quan-xian.md)
 * [ web api文档 plg-fx-apidoc](chapter1.md)
   * [Web api 注解](gong-neng/web-api-zhu-jie.md)
     * [注解pojo](gong-neng/web-api-zhu-jie/zhu-jie-pojo.md)
@@ -36,6 +35,7 @@
 * [plg-fx-springboot-parent](plg-fx-springboot-parent.md)
 * [plg-fx-springcloud-parent](plg-fx-springcloud-parent.md)
 * [plg-fx-microservice](plg-fx-microservice.md)
+* [权限 plg-fx-authority-core](quan-xian.md)
 
 ## 快速开发工具
 

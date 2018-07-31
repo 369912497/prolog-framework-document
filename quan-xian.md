@@ -1,4 +1,4 @@
-# plg-fx-authority-core
+# 权限模块
 
 > #### 模块名称
 

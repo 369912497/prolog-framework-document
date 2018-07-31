@@ -491,7 +491,25 @@ prolog:
 
 9、jdbc配置
 
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/springboottest?useSSL=false&serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+#url: jdbc:oracle:thin:@//192.168.0.84:1521/cloudpltfm
+spring.datasource.username=root
+spring.datasource.password=123
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+#driver-class-name: oracle.jdbc.OracleDriver
+# 使用druid数据源
+#初始化大小
+spring.datasource.initialSize=0
+#最小空閒
+spring.datasource.minIdle=5
+#最大連接數
+spring.datasource.maxActive=50
+#最大等待時間
+spring.datasource.maxWait=60000
+#最小生存時間
+spring.datasource.minEvictableIdleTimeMillis=25200000
 ```
 
-```
+
 

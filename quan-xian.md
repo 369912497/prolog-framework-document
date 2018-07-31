@@ -57,5 +57,3 @@ prolog:
 
 @EnablePrologTokenInterceptor
 
-
-

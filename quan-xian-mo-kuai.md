@@ -28,5 +28,7 @@ prolog:
 
 > #### 使用
 
+@EnablePrologSecurityServer\(webConfig=false,resourceConfig=true\)
 
+@EnablePrologTokenInterceptor
 

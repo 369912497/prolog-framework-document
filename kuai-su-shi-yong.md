@@ -115,7 +115,7 @@
 2、定义数据模型层
 
 ```java
-package com.prolog.framework.cs.authorization.model;
+package com.prolog.framework.cs.resource.model;
 
 import com.prolog.framework.core.annotation.AutoKey;
 import com.prolog.framework.core.annotation.Id;
@@ -188,9 +188,9 @@ public class Resource {
 3、dao层
 
 ```java
-package com.prolog.framework.cs.authorization.dao;
+package com.prolog.framework.cs.resource.dao;
 
-import com.prolog.framework.cs.authorization.model.Resource;
+import com.prolog.framework.cs.resource.model.Resource;
 import com.prolog.framework.dao.mapper.BaseMapper;
 
 public interface ResourceMapper extends BaseMapper<Resource> {
@@ -201,12 +201,12 @@ public interface ResourceMapper extends BaseMapper<Resource> {
 4、服务接口层
 
 ```java
-package com.prolog.framework.cs.authorization.service;
+package com.prolog.framework.cs.resource.service;
 
 import java.util.List;
 
 import com.prolog.framework.core.pojo.Page;
-import com.prolog.framework.cs.authorization.model.Resource;
+import com.prolog.framework.cs.resource.model.Resource;
 
 public interface IResourceService {
     void add(Resource resource) throws Exception;
@@ -221,7 +221,7 @@ public interface IResourceService {
 5、服务实现层
 
 ```java
-package com.prolog.framework.cs.authorization.service.impl;
+package com.prolog.framework.cs.resource.service.impl;
 
 import java.util.List;
 
@@ -236,9 +236,9 @@ import com.prolog.framework.core.restriction.Criteria;
 import com.prolog.framework.core.restriction.Order;
 import com.prolog.framework.core.restriction.Restriction;
 import com.prolog.framework.core.restriction.Restrictions;
-import com.prolog.framework.cs.authorization.dao.ResourceMapper;
-import com.prolog.framework.cs.authorization.model.Resource;
-import com.prolog.framework.cs.authorization.service.IResourceService;
+import com.prolog.framework.cs.resource.dao.ResourceMapper;
+import com.prolog.framework.cs.resource.model.Resource;
+import com.prolog.framework.cs.resource.service.IResourceService;
 import com.prolog.framework.dao.util.PageUtils;
 import com.prolog.framework.utils.MapUtils;
 import com.prolog.framework.utils.StringUtils;
@@ -339,7 +339,7 @@ public class RecourceServiceImpl implements IResourceService{
 6、资源服务/权限拦截实现类，实现IAuthorityService接口
 
 ```java
-package com.prolog.framework.cs.authorization.service.impl;
+package com.prolog.framework.cs.resource.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -350,8 +350,8 @@ import org.springframework.stereotype.Service;
 
 import com.prolog.framework.authority.core.service.IAuthorityService;
 import com.prolog.framework.authority.core.vo.AuthorityVO;
-import com.prolog.framework.cs.authorization.model.Resource;
-import com.prolog.framework.cs.authorization.service.IResourceService;
+import com.prolog.framework.cs.resource.model.Resource;
+import com.prolog.framework.cs.resource.service.IResourceService;
 
 @Service
 public class MyAuthorityServiceImpl implements IAuthorityService{
@@ -383,7 +383,7 @@ public class MyAuthorityServiceImpl implements IAuthorityService{
 7、启动类
 
 ```
-package com.prolog.framework.cs.authorization;
+package com.prolog.framework.cs.resource;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -398,15 +398,14 @@ import com.prolog.framework.microservice.annotation.EnablePrologService;
 @EnablePrologSecurityServer(resourceConfig=true,webConfig=false)
 @EnableTransactionManagement
 @MapperScan("com.prolog.framework.cs.resource.dao")
-public class AuthorizationApplication {
+public class ResourceApplication {
 
-	public static void main( String[] args )
+    public static void main( String[] args )
     {
-    	SpringApplication.run(AuthorizationApplication.class, args);
+        SpringApplication.run(ResourceApplication .class, args);
     }
 
 }
-
 ```
 
 

@@ -45,7 +45,9 @@ eureka:
 * @Configuration
 * @EnableDiscoveryClient
 * @FeignClient
-* @EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上
+* @EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上。
+
+
 
 ```java
 package com.prolog.framework.cs.authorization;
@@ -70,5 +72,5 @@ public class AuthorizationApplication {
 }
 ```
 
-
+添加此注解后，系统会自动生成一个RestTemplate的bean。通过参数loadBalanced来控制是否启用负载均衡
 

@@ -1,6 +1,6 @@
 ### plg-fx-springcloud-parent
 
-本模块是一个maven pom项目，继承了plg-fx-springboot项目，增加了springcloud的版本及仓库配置
+本模块是一个maven pom项目，继承了plg-fx-springboot项目，增加了springcloud的版本及仓库配置。
 
 具体配置如下：
 

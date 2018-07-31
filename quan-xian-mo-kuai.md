@@ -28,7 +28,7 @@ prolog:
 
 > #### 使用
 
-@EnablePrologSecurityServer\(webConfig=false,resourceConfig=true\)
+@EnablePrologSecurityServer\(webConfig=false,resourceConfig=true\)，开启权限服务，参数webConfig用于标识是否开启系统权限拦截，默认关闭。resourceConfig用于标识是否开启资源服务权限拦截，默认开启。
 
 @EnablePrologTokenInterceptor
 

@@ -34,6 +34,7 @@
     * [注解controller](gong-neng/web-api-zhu-jie/zhu-jie-controller.md)
 * [日志 plg-fx-log](plg-fx-log.md)
 * [plg-fx-springboot-parent](plg-fx-springboot-parent.md)
+* [plg-fx-microservice](plg-fx-microservice.md)
 
 ## 快速开发工具
 

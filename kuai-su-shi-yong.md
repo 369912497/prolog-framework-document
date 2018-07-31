@@ -246,91 +246,135 @@ import com.prolog.framework.utils.StringUtils;
 @Service
 public class RecourceServiceImpl implements IResourceService{
 
+    @Autowired
+    private ResourceMapper resourceMapper;
+
+    @Override
+    public void add(Resource resource) throws Exception {
+
+        if(resource==null){
+            throw new ParameterException("参数为null");
+        }
+        if(StringUtils.isEmpty(resource.getServiceName()))
+            throw new ParameterException("service name is null");
+
+        if(StringUtils.isEmpty(resource.getAuthNumber()))
+            throw new ParameterException("auth number is null");
+
+        if(StringUtils.isEmpty(resource.getSource()))
+            throw new ParameterException("souce is null");
+
+        if(StringUtils.isEmpty(resource.getMethod()))
+            throw new ParameterException("method is null");
+
+        //去重
+        long count = resourceMapper.findCountByMap(MapUtils.put("serviceName", resource.getServiceName()).put("authNumber", resource.getAuthNumber()).getMap(), Resource.class);
+        if(count>0){
+            throw new RepetitionException("权限编号已存在");
+        }
+        resourceMapper.save(resource);
+    }
+
+    @Override
+    public void delete(String id) {
+        resourceMapper.deleteById(id, Resource.class);
+    }
+
+    @Override
+    public void update(Resource resource) throws Exception {
+        if(resource==null || StringUtils.isEmpty(resource.getId())){
+            throw new ParameterException("id is null");
+        }
+        if(StringUtils.isEmpty(resource.getServiceName()))
+            throw new ParameterException("service name is null");
+
+        if(StringUtils.isEmpty(resource.getAuthNumber()))
+            throw new ParameterException("auth number is null");
+
+        if(StringUtils.isEmpty(resource.getSource()))
+            throw new ParameterException("souce is null");
+
+        if(StringUtils.isEmpty(resource.getMethod()))
+            throw new ParameterException("method is null");
+
+        resourceMapper.update(resource);
+    }
+
+    @Override
+    public Page<Resource> getLike(String serviceName, String authNumber, String resource, int pageNo, int pageSize) {
+        PageHelper.startPage(pageNo, pageSize);
+        Criteria c = Criteria.forClass(Resource.class);
+        Restriction r1=null;
+        if(!StringUtils.isEmpty(serviceName)){
+            r1 = Restrictions.like("serviceName","%"+serviceName+"%");
+        }
+        if(!StringUtils.isEmpty(authNumber)){
+            r1 = r1==null?Restrictions.like("authNumber","%"+authNumber+"%"):Restrictions.or(r1, Restrictions.like("authNumber","%"+authNumber+"%"));
+        }
+
+        if(!StringUtils.isEmpty(resource)){
+            r1 = r1==null?Restrictions.like("resource","%"+resource+"%"):Restrictions.or(r1, Restrictions.like("resource","%"+resource+"%"));
+        }
+        c.setRestriction(r1);
+        c.setOrder(Order.asc("authNumber"));
+        Page<Resource> page = PageUtils.getPage(resourceMapper.findByCriteria(c));
+
+        return page;
+    }
+
+    @Override
+    public List<Resource> getByServiceName(String serviceName) {
+        return resourceMapper.findByMap(MapUtils.put("serviceName", serviceName).getMap(), Resource.class);
+    }
+
+    @Override
+    public List<Resource> getAll() {
+        // TODO Auto-generated method stub
+        return resourceMapper.findByMap(null, Resource.class);
+    }
+
+}
+```
+
+6、资源服务/权限拦截实现类，实现IAuthorityService接口
+
+```
+package com.prolog.framework.cs.authorization.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.prolog.framework.authority.core.service.IAuthorityService;
+import com.prolog.framework.authority.core.vo.AuthorityVO;
+import com.prolog.framework.cs.authorization.model.Resource;
+import com.prolog.framework.cs.authorization.service.IResourceService;
+
+@Service
+public class MyAuthorityServiceImpl implements IAuthorityService{
+
+	
+	@Value("${spring.application.name:}")
+	private String applicationName;
 	@Autowired
-	private ResourceMapper resourceMapper;
+	private IResourceService resourceService;
 	
 	@Override
-	public void add(Resource resource) throws Exception {
-	
-		if(resource==null){
-			throw new ParameterException("参数为null");
+	public List<AuthorityVO> loadAuthorities() {
+		List<AuthorityVO> list = new ArrayList<AuthorityVO>();
+		List<Resource> resources = resourceService.getByServiceName(applicationName);
+		for(Resource res:resources){
+			list.add(new AuthorityVO(String.format("%s:%s", applicationName,res.getAuthNumber()),res.getMethod(),res.getSource()));
 		}
-		if(StringUtils.isEmpty(resource.getServiceName()))
-			throw new ParameterException("service name is null");
-		
-		if(StringUtils.isEmpty(resource.getAuthNumber()))
-			throw new ParameterException("auth number is null");
-		
-		if(StringUtils.isEmpty(resource.getSource()))
-			throw new ParameterException("souce is null");
-		
-		if(StringUtils.isEmpty(resource.getMethod()))
-			throw new ParameterException("method is null");
-			
-		//去重
-		long count = resourceMapper.findCountByMap(MapUtils.put("serviceName", resource.getServiceName()).put("authNumber", resource.getAuthNumber()).getMap(), Resource.class);
-		if(count>0){
-			throw new RepetitionException("权限编号已存在");
-		}
-		resourceMapper.save(resource);
+		return list;
 	}
 
 	@Override
-	public void delete(String id) {
-		resourceMapper.deleteById(id, Resource.class);
-	}
-
-	@Override
-	public void update(Resource resource) throws Exception {
-		if(resource==null || StringUtils.isEmpty(resource.getId())){
-			throw new ParameterException("id is null");
-		}
-		if(StringUtils.isEmpty(resource.getServiceName()))
-			throw new ParameterException("service name is null");
-		
-		if(StringUtils.isEmpty(resource.getAuthNumber()))
-			throw new ParameterException("auth number is null");
-		
-		if(StringUtils.isEmpty(resource.getSource()))
-			throw new ParameterException("souce is null");
-		
-		if(StringUtils.isEmpty(resource.getMethod()))
-			throw new ParameterException("method is null");
-		
-		resourceMapper.update(resource);
-	}
-
-	@Override
-	public Page<Resource> getLike(String serviceName, String authNumber, String resource, int pageNo, int pageSize) {
-		PageHelper.startPage(pageNo, pageSize);
-		Criteria c = Criteria.forClass(Resource.class);
-		Restriction r1=null;
-		if(!StringUtils.isEmpty(serviceName)){
-			r1 = Restrictions.like("serviceName","%"+serviceName+"%");
-		}
-		if(!StringUtils.isEmpty(authNumber)){
-			r1 = r1==null?Restrictions.like("authNumber","%"+authNumber+"%"):Restrictions.or(r1, Restrictions.like("authNumber","%"+authNumber+"%"));
-		}
-		
-		if(!StringUtils.isEmpty(resource)){
-			r1 = r1==null?Restrictions.like("resource","%"+resource+"%"):Restrictions.or(r1, Restrictions.like("resource","%"+resource+"%"));
-		}
-		c.setRestriction(r1);
-		c.setOrder(Order.asc("authNumber"));
-		Page<Resource> page = PageUtils.getPage(resourceMapper.findByCriteria(c));
-		
-		return page;
-	}
-
-	@Override
-	public List<Resource> getByServiceName(String serviceName) {
-		return resourceMapper.findByMap(MapUtils.put("serviceName", serviceName).getMap(), Resource.class);
-	}
-
-	@Override
-	public List<Resource> getAll() {
-		// TODO Auto-generated method stub
-		return resourceMapper.findByMap(null, Resource.class);
+	public String[] loadPermitResource() {
+		return new String[]{"/*.html","/**/*.css","/**/*.js","/**/*.ico","/**/*.png","/**/*.gif","/**/*.jpg","/**/font/*","/v2/api-docs","/oauth/**"};
 	}
 
 }

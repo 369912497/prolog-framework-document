@@ -11,7 +11,7 @@
 功能框架如下图：
 
 ### ![](/assets/import2.png)
-
+ 
 ### 使用
 
 开发微服务引入plg-fx-springboot-parent

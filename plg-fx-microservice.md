@@ -36,12 +36,38 @@ eureka:
     health-check-url-path: /actuator/health
     # 状态地址为api地址
     statusPageUrlPath: /${server.servlet.contextpath}/apidoc.html
-
 ```
 
 > #### 使用
 
-* 在controller中使用注解 @ControllerLog 进行注解，可注解在类上，亦可注解在方法上
+* 模块包含了注解@EnablePrologService，此注解包含了@Configuration  、@EnableDiscoveryClient  、@FeignClient  、@EnableConfigurationProperties\({MicroServiceConfigProperties.class}\)四个注解，通常注解在启动类上
+
+```
+package com.prolog.framework.cs.authorization;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.prolog.framework.authority.core.annotation.EnablePrologSecurityServer;
+import com.prolog.framework.microservice.annotation.EnablePrologService;
+
+@SpringBootApplication()
+@EnablePrologService(loadBalanced=true)
+@EnablePrologSecurityServer(resourceConfig=true,webConfig=false)
+@EnableTransactionManagement
+@MapperScan("com.prolog.framework.cs.authorization.dao")
+public class AuthorizationApplication {
+
+	public static void main( String[] args )
+    {
+    	SpringApplication.run(AuthorizationApplication.class, args);
+    }
+
+}
+
+```
 
 
 

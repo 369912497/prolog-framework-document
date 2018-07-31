@@ -26,7 +26,7 @@ prolog:
       maxRequestSize: 100MB
 ```
 
-> #### 使用
+> #### 使用 
 
 * 实现了controller全局异常捕获，在controller中的方法中，可以直接进行异常的抛出，不用处理
 

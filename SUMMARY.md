@@ -33,6 +33,7 @@
   * [JedisManager](gong-neng/redis.md)
 * [plg-fx-springcloud](plg-fx-springcloud.md)
 * [权限 plg-fx-authority-core](quan-xian.md)
+* [链路跟踪](lian-lu-gen-zong.md)
 
 ## 快速开发工具
 

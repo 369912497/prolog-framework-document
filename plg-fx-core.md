@@ -11,7 +11,7 @@ plg-fx-core
 ```xml
 <dependency>
      <groupId>com.prolog.framework</groupId>
-     <artifactId>plg-fx-starter-log</artifactId>
+     <artifactId>plg-fx-core</artifactId>
      <version>${plg.fx.verison}</version>
  </dependency>
 ```

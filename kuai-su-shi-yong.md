@@ -125,67 +125,64 @@ import io.swagger.annotations.ApiModelProperty;
 
 @Table(value="plg_fx_resource",columnPrefix="p_")
 public class Resource {
-	
-	@Id
-	@AutoKey(type=AutoKey.TYPE_UUID)
-	@ApiModelProperty(value = "id")
-	private String id;
-	@ApiModelProperty(value = "服务名")
-	private String serviceName;
-	
-	@ApiModelProperty(value = "权限编号")
-	private String authNumber;
-	
-	@ApiModelProperty(value = "方法")
-	private String method;
-	
-	@ApiModelProperty(value = "url资源")
-	private String source;
-	
-	@ApiModelProperty(value = "备注")
-	private String notes;
-	
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getServiceName() {
-		return serviceName;
-	}
-	public void setServiceName(String serviceName) {
-		this.serviceName = serviceName;
-	}
-	public String getAuthNumber() {
-		return authNumber;
-	}
-	public void setAuthNumber(String authNumber) {
-		this.authNumber = authNumber;
-	}
-	public String getMethod() {
-		return method;
-	}
-	public void setMethod(String method) {
-		this.method = method;
-	}
-	public String getSource() {
-		return source;
-	}
-	public void setSource(String source) {
-		this.source = source;
-	}
-	public String getNotes() {
-		return notes;
-	}
-	public void setNotes(String notes) {
-		this.notes = notes;
-	}
-	
-	
-	
-}
 
+    @Id
+    @AutoKey(type=AutoKey.TYPE_UUID)
+    @ApiModelProperty(value = "id")
+    private String id;
+    @ApiModelProperty(value = "服务名")
+    private String serviceName;
+
+    @ApiModelProperty(value = "权限编号")
+    private String authNumber;
+
+    @ApiModelProperty(value = "方法")
+    private String method;
+
+    @ApiModelProperty(value = "url资源")
+    private String source;
+
+    @ApiModelProperty(value = "备注")
+    private String notes;
+
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
+    public String getServiceName() {
+        return serviceName;
+    }
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
+    }
+    public String getAuthNumber() {
+        return authNumber;
+    }
+    public void setAuthNumber(String authNumber) {
+        this.authNumber = authNumber;
+    }
+    public String getMethod() {
+        return method;
+    }
+    public void setMethod(String method) {
+        this.method = method;
+    }
+    public String getSource() {
+        return source;
+    }
+    public void setSource(String source) {
+        this.source = source;
+    }
+    public String getNotes() {
+        return notes;
+    }
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+}
 ```
 
 

@@ -27,7 +27,6 @@
   * [文件上传/下载](wen-jian-shang-chuan.md)
 * [redis访问模块](redis-redisfang-wen-mo-kuai.md)
   * [JedisManager](gong-neng/redis.md)
-* [plg-fx-springcloud](plg-fx-springcloud.md)
 * [权限 plg-fx-authority-core](quan-xian.md)
 * [ web api文档 plg-fx-apidoc](chapter1.md)
   * [Web api 注解](gong-neng/web-api-zhu-jie.md)

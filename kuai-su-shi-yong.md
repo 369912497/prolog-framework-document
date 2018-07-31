@@ -1,6 +1,4 @@
-```
-快速使用
-```
+## 快速使用
 
 使用prolog framework快速开发一个微服务，以一个资源服务为示例
 
@@ -381,8 +379,6 @@ public class MyAuthorityServiceImpl implements IAuthorityService{
 
 }
 ```
-
-
 
 7、application.yml配置
 

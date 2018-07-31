@@ -10,26 +10,20 @@ plg-fx-authority-core
 
 ```xml
    <dependency>
-    	<groupId>com.prolog.framework</groupId>
-    	<artifactId>plg-fx-authorization-core</artifactId>
-    	<version>${prolog.framework.version}</version>
+        <groupId>com.prolog.framework</groupId>
+        <artifactId>plg-fx-authorization-core</artifactId>
+        <version>${prolog.framework.version}</version>
     </dependency>
 ```
 
 > #### 配置
 
 ```yaml
-eureka: 
-  client: 
-    serviceUrl: 
-      defaultZone: http://127.0.0.1:8761/eureka/
-  instance: 
-    # 注册时使用ip而不是主机名
-    preferIpAddress: true
-    instanceId: ${server.ipAddress}:${server.port}
-    health-check-url-path: /actuator/health
-    # 状态地址为api地址
-    statusPageUrlPath: /${server.servlet.contextpath}/apidoc.html
+prolog: 
+  ms: 
+    clientId: ${spring.application.name}
+    clientSecret: prolog0212
+    oauthServer: service-authorization
 ```
 
 > #### 使用

@@ -380,5 +380,34 @@ public class MyAuthorityServiceImpl implements IAuthorityService{
 }
 ```
 
+7、启动类
+
+```
+package com.prolog.framework.cs.authorization;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.prolog.framework.authority.core.annotation.EnablePrologSecurityServer;
+import com.prolog.framework.microservice.annotation.EnablePrologService;
+
+@SpringBootApplication()
+@EnablePrologService
+@EnablePrologSecurityServer(resourceConfig=true,webConfig=false)
+@EnableTransactionManagement
+@MapperScan("com.prolog.framework.cs.resource.dao")
+public class AuthorizationApplication {
+
+	public static void main( String[] args )
+    {
+    	SpringApplication.run(AuthorizationApplication.class, args);
+    }
+
+}
+
+```
+
 
 

@@ -185,5 +185,19 @@ public class Resource {
 }
 ```
 
+3、dao层
+
+```java
+package com.prolog.framework.cs.authorization.dao;
+
+import com.prolog.framework.cs.authorization.model.Resource;
+import com.prolog.framework.dao.mapper.BaseMapper;
+
+public interface ResourceMapper extends BaseMapper<Resource> {
+
+}
+
+```
+
 
 

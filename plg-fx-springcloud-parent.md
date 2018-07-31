@@ -1,11 +1,6 @@
 ### plg-fx-springcloud-parent
 
-本模块是一个maven pom项目，集成了plg-fx-springboot项目，主要做了四个方面的配置
-
-1. springboot配置，配置了spring-boot-starter、spring-boot-starter-aop、spring-boot-starter-web
-2. spring事务模块配置，spring-tx
-3. 日志配置，spring-boot-starter-log4j2
-4. spingboot编译插件配置及源码打包插件配置
+本模块是一个maven pom项目，继承了plg-fx-springboot项目，增加了springcloud的版本及仓库配置
 
 具体配置如下：
 
@@ -20,45 +15,44 @@
   <name>plg-fx-springcloud-parent</name>
   <url>http://maven.apache.org</url>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.cloud.version>1.4.4.RELEASE</spring.cloud.version>
-	</properties>
-	
-	<parent>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.cloud.version>1.4.4.RELEASE</spring.cloud.version>
+    </properties>
+
+    <parent>
         <groupId>com.prolog.framework</groupId>
-  		<artifactId>plg-fx-springboot-parent</artifactId>
-  		<version>1.0.0</version>
+          <artifactId>plg-fx-springboot-parent</artifactId>
+          <version>1.0.0</version>
     </parent>
-    
+
   <dependencies>
   </dependencies>
-  
-  <dependencyManagement>
-	<dependencies>
-		<dependency>
-			 <groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-parent</artifactId>
-			<version>Finchley.M8</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-	</dependencies>
-</dependencyManagement>
-	
-    <repositories>
-	    <repository>
-	        <id>spring-milestones</id>
-	        <name>Spring Milestones</name>
-	        <url>https://repo.spring.io/libs-milestone</url>
-	        <snapshots>
-	            <enabled>false</enabled>
-	        </snapshots>
-	    </repository>
-	</repositories>
-	
-</project>
 
+  <dependencyManagement>
+    <dependencies>
+        <dependency>
+             <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-parent</artifactId>
+            <version>Finchley.M8</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
 ```
 
 

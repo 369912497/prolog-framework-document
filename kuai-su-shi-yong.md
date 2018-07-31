@@ -412,7 +412,7 @@ public class ResourceApplication {
 
 8、application.yml配置
 
-```java
+```yaml
 #eureka client配置
 eureka:
   client:
@@ -426,19 +426,19 @@ eureka:
     # 状态地址为api地址
     statusPageUrlPath: /${server.servlet.contextpath}/apidoc.html
 
-  
+
 server:
   ipAddress: 127.0.0.1
   port: 8800  
   servlet: 
     contextpath: 
-    
+
 management:
   endpoints: 
     web: 
       exposure: 
         include: "*"
-        
+
 spring:
   application:
     name: service-authorization
@@ -487,9 +487,6 @@ prolog:
     mybatis:
       typeAliasesPackage: com.prolog.cs.authorization.client.model
       mapperLocations: classpath:mappers/*.xml
-  
-      
-  
 ```
 
 

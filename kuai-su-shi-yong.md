@@ -338,7 +338,7 @@ public class RecourceServiceImpl implements IResourceService{
 
 6、资源服务/权限拦截实现类，实现IAuthorityService接口
 
-```
+```java
 package com.prolog.framework.cs.authorization.service.impl;
 
 import java.util.ArrayList;
@@ -356,29 +356,28 @@ import com.prolog.framework.cs.authorization.service.IResourceService;
 @Service
 public class MyAuthorityServiceImpl implements IAuthorityService{
 
-	
-	@Value("${spring.application.name:}")
-	private String applicationName;
-	@Autowired
-	private IResourceService resourceService;
-	
-	@Override
-	public List<AuthorityVO> loadAuthorities() {
-		List<AuthorityVO> list = new ArrayList<AuthorityVO>();
-		List<Resource> resources = resourceService.getByServiceName(applicationName);
-		for(Resource res:resources){
-			list.add(new AuthorityVO(String.format("%s:%s", applicationName,res.getAuthNumber()),res.getMethod(),res.getSource()));
-		}
-		return list;
-	}
 
-	@Override
-	public String[] loadPermitResource() {
-		return new String[]{"/*.html","/**/*.css","/**/*.js","/**/*.ico","/**/*.png","/**/*.gif","/**/*.jpg","/**/font/*","/v2/api-docs","/oauth/**"};
-	}
+    @Value("${spring.application.name:}")
+    private String applicationName;
+    @Autowired
+    private IResourceService resourceService;
+
+    @Override
+    public List<AuthorityVO> loadAuthorities() {
+        List<AuthorityVO> list = new ArrayList<AuthorityVO>();
+        List<Resource> resources = resourceService.getByServiceName(applicationName);
+        for(Resource res:resources){
+            list.add(new AuthorityVO(String.format("%s:%s", applicationName,res.getAuthNumber()),res.getMethod(),res.getSource()));
+        }
+        return list;
+    }
+
+    @Override
+    public String[] loadPermitResource() {
+        return new String[]{"/*.html","/**/*.css","/**/*.js","/**/*.ico","/**/*.png","/**/*.gif","/**/*.jpg","/**/font/*","/v2/api-docs","/oauth/**"};
+    }
 
 }
-
 ```
 
 

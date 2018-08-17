@@ -40,6 +40,14 @@
 客户端调用方式
 客户端直接使用ajax请求进行打印请求，默认提交路径：http://localhost:6060/print，支持GET和POST请求。
 请求参数
+```json
+ {"url": "http://www.gridreport.cn/demos/grf/4d.grf",
+    "printName":"Microsoft XPS Document Writer",
+    "printSolution":"solution1",
+    "data":["http://www.gridreport.cn/demos/data/DataCenter.ashx?data=SubReport_4d&city=%E5%A4%A9%E6%B4%A5"]
+ }
+```
+
 
 
 4、打印或预览

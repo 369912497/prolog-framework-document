@@ -66,6 +66,28 @@
 
 ![](/assets/import8178.png)
 
+5、示例
+
+```js
+//通过ajax提交请求
+ $.ajax({
+ type: "POST",
+ url: "http://localhost:6060/print", //打印服务地址，print是固定值
+ data: {
+    "url": "http://www.gridreport.cn/demos/grf/4d.grf",
+    "printName":"Microsoft XPS Document Writer",
+    "printSolution":"solution1",
+    "data":["http://www.gridreport.cn/demos/data/DataCenter.ashx?data=SubReport_4d&city=%E5%A4%A9%E6%B4%A5"]
+ }, //报表数据 
+ contentType:'application/json',
+ dataType: "json",
+ success: function(data){
+             //处理返回值
+             //{"success":true,"message":"打印请求成功"}
+          }
+});
+```
+
 ### 称重服务快速使用
 
 1、设置参数

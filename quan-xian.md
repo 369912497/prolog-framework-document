@@ -57,5 +57,9 @@ prolog:
 
 
 
+```
+@EnablePrologAuthorizationServer
+```
 
+定义
 

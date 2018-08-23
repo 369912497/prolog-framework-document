@@ -59,3 +59,16 @@ public void testDelete(){
 
 备注：对于实体字段（@one注解），直接写字段名
 
+
+
+> #### List&lt;DataEntity&lt;T&gt;&gt; findDataEntities
+
+```java
+@Test
+public void testDelete(){
+      mapper.deleteByMap(MapUtils.put("zone", "01090113").getMap(), User.class);
+}
+```
+
+备注：对于实体字段（@one注解），直接写字段名
+

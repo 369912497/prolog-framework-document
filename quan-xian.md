@@ -59,5 +59,5 @@ prolog:
 @EnablePrologAuthorizationServer
 ```
 
-定义
+定义一个授权服务
 

@@ -53,9 +53,7 @@ prolog:
 @EnablePrologTokenInterceptor
 ```
 
-@EnablePrologTokenInterceptor注解将启用feign的token拦截器，根据配置将去权限服务器获取token并放入feign请求header中
-
-
+@EnablePrologTokenInterceptor注解将启用feign的token拦截器，根据配置将去权限服务器获取token并放入feign请求header中。
 
 ```
 @EnablePrologAuthorizationServer

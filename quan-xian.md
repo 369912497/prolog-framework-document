@@ -69,3 +69,9 @@ prolog:
 
 
 
+```
+@EnablePrologWebSecurityServer
+```
+
+与@EnablePrologSecurityServer\(resourceConfig=false,webConfig=true\)功能相同
+

@@ -59,5 +59,5 @@ prolog:
 @EnablePrologAuthorizationServer
 ```
 
-定义一个授权服务，需要实现com.prolog.framework.authority.core.service.IClientService接口和com.prolog.framework.authority.core.service.IUserService
+定义一个授权服务，需要实现com.prolog.framework.authority.core.service.IClientService接口和com.prolog.framework.authority.core.service.IUserService，同时需要提供AuthenticationManager实例
 

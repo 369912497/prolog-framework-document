@@ -59,8 +59,6 @@ public void testDelete(){
 
 备注：对于实体字段（@one注解），直接写字段名
 
-
-
 > #### List&lt;DataEntity&lt;T&gt;&gt; findDataEntities
 
 ```java
@@ -68,6 +66,17 @@ public void testDelete(){
 public void testDelete(){
       mapper.deleteByMap(MapUtils.put("zone", "01090113").getMap(), User.class);
 }
+
+@Test
+public void testDataEntity(){
+	List<DataEntity<AuClient>> list = mapper.findDataEntities("select *,1 as testclm from plg_fx_auclient where p_clientId like #{clientId}",MapUtils.put("clientId", "%a%").getMap());
+	System.out.println(list.get(0).getDataMap().size());
+	
+	Page<DataEntity<AuClient>> da = aus.getDataEntities2("select *,'dada' as testclm from plg_fx_auclient where p_clientId = #{clientId}", "platform-admin",1,100);
+	System.out.println(da.getTotalCount());
+	
+}
+	
 ```
 
 备注：对于实体字段（@one注解），直接写字段名

@@ -42,6 +42,9 @@
 
 ## 通用服务
 
-* [通用打印服务](tong-yong-fu-wu/tong-yong-da-yin-fu-wu.md)
 * [普罗格应用服务](tong-yong-fu-wu/pu-luo-ge-ying-yong-fu-wu.md)
+
+## 常见问题总结
+
+* [SilentExitException](chang-jian-wen-ti.md)
 

@@ -1,3 +1,5 @@
+### SilentExitException
+
 > 问题描述
 
 以debug方式启动项目时，程序都会在SilentExitExceptionHandler类中的throw new SilentExitException\(\)处终止

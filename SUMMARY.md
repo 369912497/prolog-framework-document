@@ -35,6 +35,7 @@
 * [微服务 plg-fx-microservice](plg-fx-microservice.md)
 * [权限 plg-fx-authority-core](quan-xian.md)
 * [日志 plg-fx-log](plg-fx-log.md)
+* [工作流 plg-fx-activiti](gong-zuo-liu-plg-fx-activiti.md)
 
 ## 快速开发工具
 

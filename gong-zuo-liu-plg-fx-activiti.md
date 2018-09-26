@@ -86,20 +86,36 @@ g-cs-activiti
 
 * 按照流程key值来启动流程定义，带有流程变量定义
 
-      url：localhost:9900/activiti/processes
+  ```
+  url：localhost:9900/activiti/processes
+  ```
 
-     根据流程的key值，也就是创建bpmn文件的id的值来启动流程，这里我们可以灵活传递一些流程变量来赋值一些变量。
+  根据流程的key值，也就是创建bpmn文件的id的值来启动流程，这里我们可以灵活传递一些流程变量来赋值一些变量。
 
 ```java
 @ApiOperation(value="启动流程",notes="附属流程变量")
-	@ApiImplicitParams({
-		@ApiImplicitParam(name = "ProcessInstanceKey", value = "流程key值", required = true, dataType = "String")
-	})
-	@PostMapping("/processes")
-	public RestMessage<?> processStart(@RequestParam Map<String,Object> map,String ProcessInstanceKey) throws Exception
+    @ApiImplicitParams({
+        @ApiImplicitParam(name = "ProcessInstanceKey", value = "流程key值", required = true, dataType = "String")
+    })
+    @PostMapping("/processes")
+    public RestMessage<?> processStart(@RequestParam Map<String,Object> map,String ProcessInstanceKey) throws Exception
 ```
 
 我们会得到流程实例的一些信息和任务信息。
+
+
+
+* 查询待认领任务,根据用户来查询待认领任务
+
+       url:localhost:9900/activiti/task
+
+```java
+      @ApiOperation(value="查询个人待认领任务",notes="根据用户来查询待认领任务")
+	@GetMapping("/task")
+	public RestMessage<?> taskingByUser(@RequestParam String userId)
+```
+
+这里会返回任务list，包含任务id，名称，以及一些流程变量。
 
 
 

@@ -82,8 +82,6 @@ g-cs-activiti
 
 返回文件的路径，两个文件路径用-隔开。
 
-
-
 * 按照流程key值来启动流程定义，带有流程变量定义
 
   ```
@@ -103,19 +101,31 @@ g-cs-activiti
 
 我们会得到流程实例的一些信息和任务信息。
 
-
-
 * 查询待认领任务,根据用户来查询待认领任务
 
-       url:localhost:9900/activiti/task
+  ```
+   url:localhost:9900/activiti/task
+  ```
 
 ```java
       @ApiOperation(value="查询个人待认领任务",notes="根据用户来查询待认领任务")
-	@GetMapping("/task")
-	public RestMessage<?> taskingByUser(@RequestParam String userId)
+    @GetMapping("/task")
+    public RestMessage<?> taskingByUser(@RequestParam String userId)
 ```
 
 这里会返回任务list，包含任务id，名称，以及一些流程变量。
+
+* 根据任务ID查询办理人列表
+
+url:localhost:9900/activiti/identityLinksForTask
+
+```
+    @ApiOperation(value="任务办理人",notes="根据任务id查询办理人")
+	@GetMapping("/identityLinksForTask")
+	public RestMessage<?> identityLinksForTask(String taskId) throws Exception
+```
+
+返回List&lt;IdentityLink&gt;。
 
 
 

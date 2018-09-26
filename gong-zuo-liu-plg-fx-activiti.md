@@ -64,26 +64,44 @@ g-cs-activiti
 
 这里我们使用bpmn文件的相对路径来部署流程定义，返回流程定义的信息，流程定义Id，定义名称，部署时间等等。
 
-
-
 * 根据流程定义ID下载bpmn和png 文件
 
   ```
    url:localhost:9900/activiti/resource
   ```
 
-       将文件下载到本地C盘的根目录
+  ```
+   将文件下载到本地C盘的根目录
+  ```
 
-```
+```java
         @ApiOperation(value="下载流程资源文件",notes="根据流程定义id来下载流程资源文件")
-	@GetMapping("/resource")
-	public RestMessage<?> downResource(String processDefinitionId) throws Exception
+    @GetMapping("/resource")
+    public RestMessage<?> downResource(String processDefinitionId) throws Exception
 ```
 
 返回文件的路径，两个文件路径用-隔开。
 
 
 
-* 
+* 按照流程key值来启动流程定义，带有流程变量定义
+
+      url：localhost:9900/activiti/processes
+
+     根据流程的key值，也就是创建bpmn文件的id的值来启动流程，这里我们可以灵活传递一些流程变量来赋值一些变量。
+
+```java
+@ApiOperation(value="启动流程",notes="附属流程变量")
+	@ApiImplicitParams({
+		@ApiImplicitParam(name = "ProcessInstanceKey", value = "流程key值", required = true, dataType = "String")
+	})
+	@PostMapping("/processes")
+	public RestMessage<?> processStart(@RequestParam Map<String,Object> map,String ProcessInstanceKey) throws Exception
+```
+
+我们会得到流程实例的一些信息和任务信息。
+
+
+
 
 

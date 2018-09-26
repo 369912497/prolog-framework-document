@@ -43,11 +43,10 @@ g-cs-activiti
   在画好bpmn文件之后，将bpmn文件上传至工程资源文件。
   url:localhost:9900\/activiti\/fileUpload
 
+       
 ```java
     @ApiOperation(value="上传bpmn文件",notes="上传bpmn文件")
     @PostMapping("/fileUpload")
     public RestMessage<?> upBPMNfile(MultipartFile file) throws Exception
 ```
-
-
 

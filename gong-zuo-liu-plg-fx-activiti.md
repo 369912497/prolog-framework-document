@@ -33,7 +33,10 @@ g-cs-activiti
   ```
 
 
-       这里是配置bpmn的上传的存放的路径。
+```
+   这里是配置bpmn的上传的存放的路径。
+```
+
 > 使用
 
 * 上传bpmn文件。
@@ -42,8 +45,8 @@ g-cs-activiti
 
 ```java
     @ApiOperation(value="上传bpmn文件",notes="上传bpmn文件")
-	@PostMapping("/fileUpload")
-	public RestMessage<?> upBPMNfile(MultipartFile file) throws Exception
+    @PostMapping("/fileUpload")
+    public RestMessage<?> upBPMNfile(MultipartFile file) throws Exception
 ```
 
 

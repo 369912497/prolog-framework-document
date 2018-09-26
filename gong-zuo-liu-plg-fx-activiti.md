@@ -2,7 +2,7 @@ Plg-fx-activiti
 
 # activiti-工作流通用接口
 
->
+&gt;
 
 ```
 g-cs-activiti
@@ -50,16 +50,16 @@ g-cs-activiti
 
 这里我们会得到文件上传后的相对路径，以便后面进行部署bpmn文件
 
-
-
 * 根据bpmn文件部署流程定义
 
-       url:localhost:9900/activiti/deploybpmn
+  ```
+   url:localhost:9900/activiti/deploybpmn
+  ```
 
 ```java
        @ApiOperation(value="部署bpmn文件",notes="根据bpmn文件部署流程定义")
-	@GetMapping("/deploybpmn")
-	public RestMessage<Deployment> deployByBpmn(String bpmnurl) throws Exception
+    @GetMapping("/deploybpmn")
+    public RestMessage<Deployment> deployByBpmn(String bpmnurl) throws Exception
 ```
 
 这里我们使用bpmn文件的相对路径来部署流程定义，返回流程定义的信息，流程定义Id，定义名称，部署时间等等。
@@ -68,11 +68,22 @@ g-cs-activiti
 
 * 根据流程定义ID下载bpmn和png 文件
 
-       url:localhost:9900/activiti/resource
+  ```
+   url:localhost:9900/activiti/resource
+  ```
 
-      
+       将文件下载到本地C盘的根目录
+
+```
+        @ApiOperation(value="下载流程资源文件",notes="根据流程定义id来下载流程资源文件")
+	@GetMapping("/resource")
+	public RestMessage<?> downResource(String processDefinitionId) throws Exception
+```
+
+返回文件的路径，两个文件路径用-隔开。
 
 
 
+* 
 
 

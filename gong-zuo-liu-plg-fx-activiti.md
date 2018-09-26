@@ -2,7 +2,7 @@ Plg-fx-activiti
 
 # activiti-工作流通用接口
 
-> 
+>
 
 ```
 g-cs-activiti
@@ -32,7 +32,6 @@ g-cs-activiti
        filePath: C:/kingsley/plg_work/workspace/20180925/plg-cs-activiti/src/main/resources/bpm
   ```
 
-
 ```
    这里是配置bpmn的上传的存放的路径。
 ```
@@ -43,10 +42,37 @@ g-cs-activiti
   在画好bpmn文件之后，将bpmn文件上传至工程资源文件。
   url:localhost:9900\/activiti\/fileUpload
 
-       
 ```java
     @ApiOperation(value="上传bpmn文件",notes="上传bpmn文件")
     @PostMapping("/fileUpload")
-    public RestMessage<?> upBPMNfile(MultipartFile file) throws Exception
+    public RestMessage<String> upBPMNfile(MultipartFile file) throws Exception
 ```
+
+这里我们会得到文件上传后的相对路径，以便后面进行部署bpmn文件
+
+
+
+* 根据bpmn文件部署流程定义
+
+       url:localhost:9900/activiti/deploybpmn
+
+```java
+       @ApiOperation(value="部署bpmn文件",notes="根据bpmn文件部署流程定义")
+	@GetMapping("/deploybpmn")
+	public RestMessage<Deployment> deployByBpmn(String bpmnurl) throws Exception
+```
+
+这里我们使用bpmn文件的相对路径来部署流程定义，返回流程定义的信息，流程定义Id，定义名称，部署时间等等。
+
+
+
+* 根据流程定义ID下载bpmn和png 文件
+
+       url:localhost:9900/activiti/resource
+
+      
+
+
+
+
 

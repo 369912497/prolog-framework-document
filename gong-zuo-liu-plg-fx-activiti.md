@@ -119,15 +119,81 @@ g-cs-activiti
 
 url:localhost:9900/activiti/identityLinksForTask
 
-```
+```java
     @ApiOperation(value="任务办理人",notes="根据任务id查询办理人")
-	@GetMapping("/identityLinksForTask")
-	public RestMessage<?> identityLinksForTask(String taskId) throws Exception
+    @GetMapping("/identityLinksForTask")
+    public RestMessage<?> identityLinksForTask(String taskId) throws Exception
 ```
 
 返回List&lt;IdentityLink&gt;。
 
+* 认领任务
 
+```java
+@ApiOperation(value="认领任务",notes="根据用户和流程实例id认领任务")
+	@GetMapping("/tasktouser")
+	public RestMessage<?> taskGet(String user ,String instanceId)
+```
+
+* 完后任务
+
+```java
+@ApiOperation(value="完成任务",notes="完成任务")
+	@GetMapping("/taskdown")
+	public RestMessage<?> taskdown(String taskId)
+```
+
+* 查询历史任务,单条流程实例id查询
+
+```java
+@ApiOperation(value="流程实例历史记录",notes="根据流程实例id查询历史记录")
+	@GetMapping("/history")
+	public RestMessage<?> historyInfo(String instanceId) throws Exception
+```
+
+* 按照流程定义id来查询历史记录
+
+```java
+@ApiOperation(value="流程定义历史记录",notes="根据流程定义id查询历史记录")
+	@GetMapping("/history/define")
+	public RestMessage<?> historyInfoByde(String defineId) throws Exception
+```
+
+* 根据用户来查询他参与过的流程信息
+
+```java
+@ApiOperation(value="用户流程历史记录",notes="根据用户查询历史记录")
+	@GetMapping("/historyaboutusr")
+	public RestMessage<?> historyInfoByUser(String username) throws Exception
+```
+
+* 删除流程定义
+
+```java
+@ApiOperation(value="删除流程",notes="根据流程部署id删除，后面的参数是是否级联删除")
+	@GetMapping("/deleteProcess")
+	public RestMessage<?> deleteProcessDefinitonByDeploymentId(String deploymentId,boolean cascade) throws Exception
+```
+
+* 获取所有部署的流程信息
+  	//查询所有历史记录
+
+```java
+//获取所有部署的流程信息
+	//查询所有历史记录
+	@ApiOperation(value="流程部署记录",notes="所有")
+	@GetMapping("/deployhistoryall")
+	public RestMessage<?> deployhistoryall(int maxResults,int firstResult) throws Exception
+```
+
+* 查询所有历史记录
+
+```java
+//查询所有历史记录
+	@ApiOperation(value="用户流程历史记录",notes="根据用户查询历史记录")
+	@GetMapping("/historyall")
+	public RestMessage<?> historyall(int maxResults,int firstResult) throws Exception
+```
 
 
 

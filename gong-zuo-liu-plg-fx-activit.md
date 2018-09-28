@@ -29,7 +29,13 @@
 >
 > 使用
 
-service层提供的方法
+service层
+
+```java
+public class ActivitiServiceImpl implements ActivitiService
+```
+
+提供的方法
 
 1. 向组任务中添加或者删除成员
 
@@ -38,9 +44,18 @@ service层提供的方法
     public void addOrDeleteEmpToGroupTask(String taskId,List<String> DelaUserName,String flag)
 ```
 
-        参数：任务id，成员名称list，flag（add或者delete代表新增或者删除）
+```
+    参数：任务id，成员名称list，flag（add或者delete代表新增或者删除）
+```
 
-1. 
+   2.根据bpmn文件部署流程定义
+
+```
+      public Deployment deployByBpmn(String bpmnurl) throws Exception
+```
+
+   3.
+
 
 
 

@@ -1,4 +1,4 @@
-Plg-fx-activiti
+Plg-cs-activiti
 
 # activiti-工作流通用接口
 

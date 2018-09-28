@@ -5,7 +5,7 @@
 > 引用
 
 ```
-   <dependency>
+    <dependency>
         <groupId>org.activiti</groupId>
         <artifactId>activiti-engine</artifactId>
         <version>6.0.0</version>

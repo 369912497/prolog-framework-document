@@ -25,5 +25,22 @@
     </dependency>
 ```
 
+> 配置
+
+
+
+> 使用
+
+service层提供的方法
+
+1. 向组任务中添加或者删除成员
+
+```java
+       //向组任务中添加或删除成员
+	public void addOrDeleteEmpToGroupTask(String taskId,List<String> DelaUserName,String flag)
+```
+
+       参数：任务id，成员名称list，flag（add或者delete代表新增或者删除）
+
 
 

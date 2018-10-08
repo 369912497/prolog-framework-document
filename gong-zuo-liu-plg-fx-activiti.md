@@ -192,7 +192,7 @@ url:localhost:9900/activiti/identityLinksForTask
 
 ```java
 //查询所有历史记录
-    @ApiOperation(value="用户流程历史记录",notes="根据用户查询历史记录")
+    @ApiOperation(value="查询所有历史记录",notes="查询所有历史记录")
     @GetMapping("/historyall")
     public RestMessage<?> historyall(int maxResults,int firstResult) throws Exception
 ```
